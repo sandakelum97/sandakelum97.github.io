@@ -654,3 +654,15 @@ body {
     background: var(--accent);
     color: var(--primary);
 }
+/* Certificate Links Styling */
+.cert-list a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+    border-bottom: 1px dotted #ccc; /* Subtle hint that it's a link */
+}
+
+.cert-list a:hover {
+    color: var(--primary); /* Turns Navy Blue on hover */
+    border-bottom: 1px solid var(--accent);
+}
