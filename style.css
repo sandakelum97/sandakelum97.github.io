@@ -501,3 +501,103 @@ body {
     .qualifications-grid { gap: 20px; }
     a { text-decoration: none; color: black; }
 }
+/* === EXPERIENCE TIMELINE === */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* The vertical line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #e9ecef;
+    top: 0;
+    bottom: 0;
+    left: 20px; /* Line position */
+    margin-left: -1.5px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* The Dots on the line */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    right: auto;
+    background-color: var(--white);
+    border: 3px solid var(--accent);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+    left: 11px; /* Adjust to center on line */
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--primary); /* Navy accent on card */
+}
+
+.timeline-date {
+    display: inline-block;
+    background: #e3f2fd;
+    color: var(--primary);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.timeline-content h4 {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.timeline-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.timeline-content li {
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 20px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.timeline-content li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* Specific Border Colors for different job types */
+.job-fulltime { border-left-color: var(--primary); }
+.job-contract { border-left-color: #ff9f43; } /* Orange for contract */
