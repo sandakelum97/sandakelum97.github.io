@@ -3,7 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; font-src 'self' https://cdnjs.cloudflare.com https://fonts.gstatic.com; img-src 'self' data:; script-src 'self' 'unsafe-inline';">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta name="description" content="Portfolio of Tharaka Dissanayaka - Senior Security & System Engineer specializing in Zero Trust, Cloud Automation, and Infrastructure Security.">
+    <meta property="og:title" content="Tharaka Dissanayaka | Security Engineer Portfolio">
+    <meta property="og:image" content="image_0.jpg">
+
     <title>Tharaka Dissanayaka | Senior Security & System Engineer</title>
+    
     <link rel="icon" href="image_0.jpg" type="image/jpeg">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -26,25 +35,20 @@
     <header class="hero">
         <div class="container">
             <div class="hero-content">
-                
                 <div class="hero-image-wrapper">
                     <img src="image_0.jpg" alt="Tharaka Dissanayaka" class="profile-img">
                 </div>
-
                 <div class="hero-text">
                     <h1>Tharaka Dissanayaka</h1>
                     <h2>Senior Security & System Engineer</h2>
                     <p class="hero-desc">7+ Years in Cybersecurity & Enterprise Infrastructure | Driving Secure, Scalable IT Solutions | Zero Trust | Automation | Low-Code Solutions</p>
-                    
                     <div class="hero-btns">
                         <a href="#infrastructure" class="btn primary-btn">View Projects</a>
-                        <a href="https://www.linkedin.com/in/tharaka-dissanayaka/" target="_blank" class="btn secondary-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/sandakelum97" target="_blank" class="btn secondary-btn"><i class="fab fa-github"></i> GitHub</a>
-                        <a href="https://www.upwork.com/freelancers/~01524410a5b48fd325?mp_source=share" target="_blank" class="btn secondary-btn"><i class="fab fa-upwork"></i> Upwork</a>
-                        <a href="https://www.fiverr.com/s/XL9ZdBP" target="_blank" class="btn secondary-btn"><i class="fab fa-fiverr"></i> Fiverr</a>
+                        <a href="https://www.linkedin.com/in/tharaka-dissanayaka/" target="_blank" rel="noopener noreferrer" class="btn secondary-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/sandakelum97" target="_blank" rel="noopener noreferrer" class="btn secondary-btn"><i class="fab fa-github"></i> GitHub</a>
+                        <a href="https://www.upwork.com/freelancers/~01524410a5b48fd325?mp_source=share" target="_blank" rel="noopener noreferrer" class="btn secondary-btn"><i class="fab fa-upwork"></i> Upwork</a>
                     </div>
                 </div>
-
             </div>
         </div>
     </header>
@@ -53,12 +57,8 @@
         <div class="container">
             <h2 class="section-title">Professional Profile</h2>
             <div class="about-content">
-                <p>
-                   Senior System & Security Engineer with 7+ years of experience in cybersecurity, enterprise infrastructure, and network security within the telecommunications industry. Expertise includes EDR/XDR (SentinelOne), firewalls (Fortinet, SonicWall), Zero Trust architecture, vulnerability management, and incident response.
-                </p>
-                <p>
-                   Strong hands-on experience with Windows Server, Active Directory, VMware ESXi, MS SQL Server, Microsoft Dynamics NAV, QuickBooks, and hybrid backup and disaster recovery solutions. Skilled in networking (Cisco, Meraki, Ruckus), security monitoring, and infrastructure automation (Terraform, Ansible). Holds EMSc in Information Security, Diploma in Network Engineering, and certifications from ISC2, Microsoft, Cisco, CompTIA, Fortinet, and Azure.
-                </p>
+                <p>Senior System & Security Engineer with 7+ years of experience in cybersecurity, enterprise infrastructure, and network security within the telecommunications industry. Expertise includes EDR/XDR (SentinelOne), firewalls (Fortinet, SonicWall), Zero Trust architecture, vulnerability management, and incident response.</p>
+                <p>Strong hands-on experience with Windows Server, Active Directory, VMware ESXi, MS SQL Server, Microsoft Dynamics NAV, QuickBooks, and hybrid backup and disaster recovery solutions. Skilled in networking (Cisco, Meraki, Ruckus), security monitoring, and infrastructure automation (Terraform, Ansible). Holds EMSc in Information Security, Diploma in Network Engineering, and certifications from ISC2, Microsoft, Cisco, CompTIA, Fortinet, and Azure.</p>
             </div>
         </div>
     </section>
@@ -67,16 +67,14 @@
         <div class="container">
             <h2 class="section-title">Infrastructure & Security Projects</h2>
             
-<div class="project-card">
+            <div class="project-card">
                 <div class="project-info">
                     <div class="project-header">
                         <h3>Data Center Server Migration & Infrastructure Enhancement</h3>
                         <span class="date-badge">Nov 2021 - Mar 2022</span>
                     </div>
                     <p class="client-name"><strong>Associated with:</strong> Chesmi Consolidated (pvt) Ltd.</p>
-                    
                     <p><strong>Overview:</strong> Led a critical infrastructure overhaul to replace aging legacy hardware (Dell T110 ii) with a modern, virtualized environment. The goal was to ensure high availability, redundancy, and centralized management.</p>
-                    
                     <ul class="project-bullets">
                         <li><strong>Virtualization:</strong> Migrated 3 bare-metal servers to 2 <strong>Dell R440</strong> hosts running <strong>VMware ESXi 7</strong>.</li>
                         <li><strong>OS Modernization:</strong> Upgraded MS Dynamics NAV (Server 2019 → 2022) and Active Directory (Server 2008 R2 → 2016).</li>
@@ -84,7 +82,6 @@
                         <li><strong>Security:</strong> Deployed <strong>SonicWall</strong> firewalls with LDAP-integrated SSL VPN for secure remote access.</li>
                         <li><strong>Backup Strategy:</strong> Configured <strong>Nakivo</strong> Backup & Replication on a <strong>QSAN NAS</strong> for disaster recovery.</li>
                     </ul>
-
                     <div class="gallery-title"><i class="fas fa-project-diagram"></i> Architecture Diagrams</div>
                     <div class="gallery-grid">
                         <div class="gallery-item">
@@ -100,126 +97,47 @@
                             <span>External Access</span>
                         </div>
                     </div>
-
-                   <div class="tech-stack-container">
-                        <p><strong>Key Technologies & Skills::</strong></p>
+                    <div class="tech-stack-container">
+                        <p><strong>Key Technologies & Skills:</strong></p>
                         <div class="tech-badges">
-                            <span class="tech-badge">
-                                <i class="fas fa-layer-group"></i> Virtualization (VMware)
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-users-cog"></i> Active Directory (AD)
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-shield-alt"></i> Network Security
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-sync"></i> Backup & Replication
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-id-card"></i> LDAP
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-chart-line"></i> ERP (Dynamics NAV)
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-network-wired"></i> Networking
-                            </span>
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-server"></i> Dell R440
-                            </span>
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-layer-group"></i> VMware ESXi 7
-                            </span>
-                            
-                            <span class="tech-badge">
-                                <i class="fab fa-windows"></i> Server 2019/22
-                            </span>
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-shield-alt"></i> SonicWall
-                            </span>
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-save"></i> Nakivo
-                            </span>
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-hdd"></i> QSAN NAS
-                            </span>
-
+                            <span class="tech-badge"><i class="fas fa-layer-group"></i> Virtualization (VMware)</span>
+                            <span class="tech-badge"><i class="fas fa-users-cog"></i> Active Directory (AD)</span>
+                            <span class="tech-badge"><i class="fas fa-shield-alt"></i> Network Security</span>
+                            <span class="tech-badge"><i class="fas fa-sync"></i> Backup & Replication</span>
+                            <span class="tech-badge"><i class="fas fa-server"></i> Dell R440</span>
+                            <span class="tech-badge"><i class="fab fa-windows"></i> Server 2019/22</span>
                         </div>
                     </div>
-                    
-                        </div>
-                    </div>
+                </div>
+            </div>
 
-          <div class="project-card">
+            <div class="project-card">
                 <div class="project-info">
                     <div class="project-header">
                         <h3>Zero Trust Security Transformation & EDR Implementation</h3>
                         <span class="date-badge">Nov 2023 - Jan 2024</span>
                     </div>
                     <p class="client-name"><strong>Associated with:</strong> Chesmi Consolidated</p>
-                    
                     <p><strong>Overview:</strong> Executed a comprehensive security modernization initiative, transitioning from legacy on-premise antivirus (ESET) to cloud-native EDR/XDR and upgrading perimeter defense hardware to support Zero Trust principles.</p>
-                    
                     <ul class="project-bullets">
                         <li><strong>Firewall Modernization:</strong> Upgraded core perimeter security from SonicWall TZ-300 to <strong>TZ-370</strong>, significantly increasing throughput and Deep Packet Inspection (DPI) capabilities.</li>
                         <li><strong>Endpoint Transformation:</strong> Replaced legacy ESET Protect On-Prem with <strong>SentinelOne EDR/XDR</strong>, enabling autonomous threat response and ransomware rollback capabilities.</li>
                         <li><strong>Analytics & Visibility:</strong> Updated SonicWall Analyzer to provide granular reporting on network traffic and security events.</li>
                         <li><strong>Remote Access:</strong> Hardened <strong>SSL-VPN</strong> configurations to enforce least-privilege access for remote workforce.</li>
                     </ul>
-
                     <div class="tech-stack-container">
                         <p><strong>Key Technologies & Skills:</strong></p>
                         <div class="tech-badges">
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-robot"></i> SentinelOne EDR/XDR
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-user-lock"></i> Zero Trust Architecture
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-shield-alt"></i> SonicWall Firewall
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-laptop-medical"></i> Endpoint Security
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-file-medical-alt"></i> Incident Management
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-key"></i> SSL VPN
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-crosshairs"></i> Threat Hunting
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-search-location"></i> Vulnerability Mgmt
-                            </span>
-
+                            <span class="tech-badge"><i class="fas fa-robot"></i> SentinelOne EDR/XDR</span>
+                            <span class="tech-badge"><i class="fas fa-user-lock"></i> Zero Trust Architecture</span>
+                            <span class="tech-badge"><i class="fas fa-shield-alt"></i> SonicWall Firewall</span>
+                            <span class="tech-badge"><i class="fas fa-crosshairs"></i> Threat Hunting</span>
+                            <span class="tech-badge"><i class="fas fa-search-location"></i> Vulnerability Mgmt</span>
                         </div>
                     </div>
-
                 </div>
             </div>
+
             <div class="project-card">
                 <div class="project-info">
                     <div class="project-header">
@@ -227,16 +145,12 @@
                         <span class="date-badge">Jan 2025</span>
                     </div>
                     <p class="client-name"><strong>Associated with:</strong> Chesmi Consolidated</p>
-                    
                     <p><strong>Overview:</strong> Designed and deployed a secure Site-to-Site IPsec VPN tunnel to bridge the Head Office (HO) and a Remote Branch, enabling encrypted inter-office communication over the public internet.</p>
-                    
                     <ul class="project-bullets">
                         <li><strong>Architecture:</strong> Configured a LAN-to-LAN IPsec tunnel between <strong>SonicWall TZ370</strong> (HQ) and <strong>SonicWall TZ270</strong> (Branch) using IKEv2.</li>
-                        <li><strong>Secure Routing:</strong> Established static routes between HO and Branch subnets, ensuring seamless access to internal resources (File Servers, ERP).</li>
-                        <li><strong>Security Hardening:</strong> Applied strict firewall policies to restrict tunnel traffic and enforced strong encryption standards (AES-256) for data integrity.</li>
-                        <li><strong>Reliability:</strong> Implemented Keep-Alive monitoring and fail-safe configurations to maintain tunnel stability.</li>
+                        <li><strong>Secure Routing:</strong> Established static routes between HO and Branch subnets, ensuring seamless access to internal resources.</li>
+                        <li><strong>Security Hardening:</strong> Applied strict firewall policies to restrict tunnel traffic and enforced strong encryption standards (AES-256).</li>
                     </ul>
-
                     <div class="gallery-title"><i class="fas fa-network-wired"></i> Logical Topology</div>
                     <div class="gallery-grid">
                         <div class="gallery-item" style="max-width: 600px; margin: 0 auto;">
@@ -244,40 +158,18 @@
                             <span>VPN Tunnel Architecture</span>
                         </div>
                     </div>
-
                     <div class="tech-stack-container">
                         <p><strong>Key Technologies & Skills:</strong></p>
                         <div class="tech-badges">
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-shield-alt"></i> SonicWall TZ Series
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-lock"></i> IPsec VPN (IKEv2)
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-exchange-alt"></i> Site-to-Site Tunneling
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-route"></i> Network Routing
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-key"></i> Encryption (AES)
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-server"></i> WAN Connectivity
-                            </span>
-
+                            <span class="tech-badge"><i class="fas fa-shield-alt"></i> SonicWall TZ Series</span>
+                            <span class="tech-badge"><i class="fas fa-lock"></i> IPsec VPN (IKEv2)</span>
+                            <span class="tech-badge"><i class="fas fa-exchange-alt"></i> Site-to-Site Tunneling</span>
+                            <span class="tech-badge"><i class="fas fa-key"></i> Encryption (AES)</span>
                         </div>
                     </div>
-
                 </div>
             </div>
+
             <div class="project-card">
                 <div class="project-info">
                     <div class="project-header">
@@ -285,45 +177,22 @@
                         <span class="date-badge">Jul 2022 - Sep 2022</span>
                     </div>
                     <p class="client-name"><strong>Associated with:</strong> Chesmi Consolidated</p>
-                    
-                    <p><strong>Overview:</strong> Managed the end-to-end migration of the company's financial core from legacy on-premise software to a modern cloud-hosted solution, improving accessibility for the finance team.</p>
-                    
+                    <p><strong>Overview:</strong> Managed the end-to-end migration of the company's financial core from legacy on-premise software to a modern cloud-hosted solution.</p>
                     <ul class="project-bullets">
-                        <li><strong>Cloud Migration:</strong> Successfully upgraded <strong>QuickBooks 2013</strong> to <strong>QuickBooks Cloud Premier 2021</strong>, moving financial data to a secure cloud environment.</li>
-                        <li><strong>Process Automation:</strong> Integrated custom add-on modules for automated <strong>Invoice & Cheque Printing</strong>, reducing manual entry errors.</li>
-                        <li><strong>System Optimization:</strong> Streamlined multi-user access permissions, allowing the finance department to work simultaneously without database locking issues.</li>
-                        <li><strong>Outcome:</strong> Delivered the project on time with zero data loss, resulting in faster reporting and improved system reliability.</li>
+                        <li><strong>Cloud Migration:</strong> Successfully upgraded <strong>QuickBooks 2013</strong> to <strong>QuickBooks Cloud Premier 2021</strong>.</li>
+                        <li><strong>Process Automation:</strong> Integrated custom add-on modules for automated <strong>Invoice & Cheque Printing</strong>.</li>
+                        <li><strong>System Optimization:</strong> Streamlined multi-user access permissions to prevent database locking issues.</li>
                     </ul>
-
                     <div class="tech-stack-container">
-                        <p><strong>Key Technologies & Skills:</strong></p>
                         <div class="tech-badges">
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-file-invoice-dollar"></i> QuickBooks Enterprise
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-cloud-upload-alt"></i> Cloud Migration
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-cogs"></i> System Integration
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-print"></i> Workflow Automation
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-database"></i> Data Integrity
-                            </span>
-
+                            <span class="tech-badge"><i class="fas fa-file-invoice-dollar"></i> QuickBooks Enterprise</span>
+                            <span class="tech-badge"><i class="fas fa-cloud-upload-alt"></i> Cloud Migration</span>
+                            <span class="tech-badge"><i class="fas fa-database"></i> Data Integrity</span>
                         </div>
                     </div>
-
                 </div>
             </div>
+
             <div class="project-card">
                 <div class="project-info">
                     <div class="project-header">
@@ -331,16 +200,7 @@
                         <span class="date-badge">Feb 2020 - Feb 2023</span>
                     </div>
                     <p class="client-name"><strong>Associated with:</strong> Chelcy Solutions</p>
-                    
-                    <p><strong>Overview:</strong> Served as the Project Supervisor for a large-scale IT infrastructure deployment, overseeing the end-to-end installation of enterprise-grade networking, fiber optics, and security systems for a high-tech facility.</p>
-                    
-                    <ul class="project-bullets">
-                        <li><strong>Network Architecture:</strong> Designed a high-density wireless network using <strong>Cisco Meraki</strong> and <strong>Ruckus</strong> Access Points, supported by Ruckus ICX switches for low-latency performance.</li>
-                        <li><strong>Fiber Backbone:</strong> Managed the structured cabling and termination of <strong>Molex Fiber Optics</strong> and CommScope copper backbones to ensure 10Gbps throughput between core and edge switches.</li>
-                        <li><strong>Security & Surveillance:</strong> Integrated a centralized <strong>Hikvision CCTV</strong> surveillance system with remote monitoring capabilities.</li>
-                        <li><strong>Telephony:</strong> Deployed an <strong>Avaya PABX</strong> communication system for unified voice connectivity.</li>
-                    </ul>
-
+                    <p><strong>Overview:</strong> Served as the Project Supervisor for a large-scale IT infrastructure deployment, overseeing the end-to-end installation of networking, fiber optics, and security systems.</p>
                     <div class="gallery-title"><i class="fas fa-project-diagram"></i> Network Topology & Cabling</div>
                     <div class="gallery-grid">
                         <div class="gallery-item">
@@ -352,107 +212,48 @@
                             <span>Fiber Backbone Layout</span>
                         </div>
                     </div>
-
                     <div class="tech-stack-container">
-                        <p><strong>Key Technologies & Skills:</strong></p>
                         <div class="tech-badges">
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-wifi"></i> Cisco Meraki / Ruckus
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-ethernet"></i> Fiber Optics (Molex)
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-video"></i> Hikvision CCTV
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-phone-volume"></i> Avaya PABX
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-tasks"></i> Project Management
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-network-wired"></i> Structured Cabling
-                            </span>
-
+                            <span class="tech-badge"><i class="fas fa-wifi"></i> Cisco Meraki / Ruckus</span>
+                            <span class="tech-badge"><i class="fas fa-ethernet"></i> Fiber Optics (Molex)</span>
+                            <span class="tech-badge"><i class="fas fa-tasks"></i> Project Management</span>
                         </div>
                     </div>
-
                 </div>
             </div>
+            
             <div class="project-card">
-                <div class="project-info">
-                    <div class="project-header">
-                        <h3>ZinCat POS System Implementation</h3>
-                        <span class="date-badge">Feb 2020 - Jun 2020</span>
-                    </div>
-                    <p class="client-name"><strong>Associated with:</strong> Taphouse by RnR</p>
-                    
-                    <p><strong>Overview:</strong> Led the end-to-end deployment of a modern Point of Sale (POS) system to digitize sales tracking and inventory management for a busy hospitality environment.</p>
-                    
-                    <ul class="project-bullets">
-                        <li><strong>System Implementation:</strong> Deployed <strong>ZinCat POS</strong>, replacing manual tracking with a centralized digital ledger for real-time sales analysis.</li>
-                        <li><strong>Integration:</strong> Collaborated with network vendors to integrate the POS units with the existing LAN/WAN infrastructure for seamless data synchronization.</li>
-                        <li><strong>Training & Change Mgmt:</strong> Conducted hands-on training workshops for staff and management, ensuring high user adoption and minimizing operational disruptions.</li>
-                        <li><strong>Support:</strong> Provided post-implementation troubleshooting and performance tuning to ensure 100% uptime during peak business hours.</li>
-                    </ul>
-
-                    <div class="tech-stack-container">
-                        <p><strong>Key Technologies & Skills:</strong></p>
-                        <div class="tech-badges">
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-cash-register"></i> POS Systems
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-boxes"></i> Inventory Management
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-chalkboard-teacher"></i> User Training
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-tools"></i> Technical Support
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-network-wired"></i> System Integration
-                            </span>
-
-                        </div>
-                    </div>
-
-                </div>
+                 <div class="project-info">
+                     <div class="project-header">
+                         <h3>ZinCat POS System Implementation</h3>
+                         <span class="date-badge">Feb 2020 - Jun 2020</span>
+                     </div>
+                     <p class="client-name"><strong>Associated with:</strong> Taphouse by RnR</p>
+                     <p><strong>Overview:</strong> Led the end-to-end deployment of a modern Point of Sale (POS) system to digitize sales tracking and inventory management.</p>
+                     <div class="tech-stack-container">
+                         <div class="tech-badges">
+                             <span class="tech-badge"><i class="fas fa-cash-register"></i> POS Systems</span>
+                             <span class="tech-badge"><i class="fas fa-network-wired"></i> System Integration</span>
+                         </div>
+                     </div>
+                 </div>
             </div>
+
+        </div>
     </section>
 
     <section id="dev" class="section">
         <div class="container">
             <h2 class="section-title">Development & Automation</h2>
+            
             <div class="project-card" style="border-left: 5px solid #ff9f43;">
                 <div class="project-info">
                     <div class="project-header">
                         <h3>TaraTek Global (R&D & Tech Innovation)</h3>
                         <span class="date-badge">Present</span>
                     </div>
-                    <p class="client-name"><strong>Role:</strong> Founder & Lead Engineer | <a href="https://www.taratekglobal.com/" target="_blank" style="color: #0d47a1; text-decoration: underline;">Visit Website <i class="fas fa-external-link-alt"></i></a></p>
-                    
+                    <p class="client-name"><strong>Role:</strong> Founder & Lead Engineer | <a href="https://www.taratekglobal.com/" target="_blank" rel="noopener noreferrer" style="color: #0d47a1; text-decoration: underline;">Visit Website <i class="fas fa-external-link-alt"></i></a></p>
                     <p><strong>Overview:</strong> My personal R&D lab and consultancy venture focused on bridging the gap between complex engineering problems and practical, low-code automation solutions.</p>
-                    
-                    <ul class="project-bullets">
-                        <li><strong>Innovation Hub:</strong> A dedicated workspace for experimenting with <strong>IoT</strong>, <strong>Generative AI</strong>, and <strong>Cloud Automation</strong> before deploying them in enterprise environments.</li>
-                        <li><strong>SaaS Development:</strong> Developing rapid-deployment business tools using <strong>AppSheet</strong> and <strong>Google Cloud</strong> to help SMEs digitize operations.</li>
-                        <li><strong>Consultancy:</strong> Providing specialized technical consultation on <strong>Zero Trust Security</strong> architectures and Infrastructure Modernization.</li>
-                    </ul>
-
                     <div class="gallery-title"><i class="fas fa-desktop"></i> Digital Portfolio</div>
                     <div class="gallery-grid">
                         <div class="gallery-item">
@@ -468,85 +269,52 @@
                             <span>Performance Metrics</span>
                         </div>
                     </div>
-
                     <div class="tech-stack-container">
                         <p><strong>Focus Areas:</strong></p>
                         <div class="tech-badges">
                             <span class="tech-badge"><i class="fas fa-lightbulb"></i> R&D Innovation</span>
                             <span class="tech-badge"><i class="fas fa-rocket"></i> Startup Leadership</span>
                             <span class="tech-badge"><i class="fas fa-code-branch"></i> SaaS Development</span>
-                            <span class="tech-badge"><i class="fas fa-microchip"></i> IoT & Automation</span>
                             <span class="tech-badge"><i class="fab fa-google"></i> Google Cloud Stack</span>
                         </div>
                     </div>
-
                 </div>
             </div>
 
-           <div class="project-card">
+            <div class="project-card">
                 <div class="project-info">
                     <div class="project-header">
                         <h3>CHESMI - IT Service & Asset Management (ITSM) Platform</h3>
                         <span class="date-badge">Aug 2025 - Oct 2025</span>
                     </div>
                     <p class="client-name"><strong>Associated with:</strong> Chesmi Consolidated</p>
-                    
                     <p><strong>Overview:</strong> Developed a fully custom internal platform to centralize IT resource management. The system acts as a hub for asset lifecycle tracking, incident reporting, and automated governance.</p>
-                    
-                    <ul class="project-bullets">
-                        <li><strong>Self-Service Portal:</strong> Empowered employees to view assigned assets, submit support tickets, and access the Knowledge Base without IT intervention.</li>
-                        <li><strong>Asset Lifecycle (ITAM):</strong> Built modules to track hardware from procurement to disposal, including warranty alerts and maintenance logs.</li>
-                        <li><strong>Automation Engine:</strong> Implemented logic to auto-generate PDF acknowledgment forms for asset handovers and send email triggers for SLA breaches.</li>
-                        <li><strong>Incident Management:</strong> Structured the ticketing workflow to track root causes, reducing resolution times by streamlining assignment logic.</li>
-                    </ul>
-
                     <div class="gallery-title"><i class="fas fa-images"></i> System Interface</div>
                     <div class="gallery-grid">
                         <div class="gallery-item">
                             <img src="1760352300789.jfif" alt="IT Admin Dashboard" onclick="window.open(this.src)">
-                            <span>Admin Dashboard & Analytics</span>
+                            <span>Admin Dashboard</span>
                         </div>
                         <div class="gallery-item">
                             <img src="Adobe Express - file.jpg" alt="App Logo" onclick="window.open(this.src)">
                             <span>Mobile App Interface</span>
                         </div>
                     </div>
-
                     <div style="margin-top: 15px; margin-bottom: 15px;">
-                        <a href="https://drive.google.com/file/d/16upQYAN6o7dlmZHrfsPkdFhVM8ti-rTk/view?usp=sharing" target="_blank" class="btn primary-btn" style="font-size: 0.9rem;">
+                        <a href="https://drive.google.com/file/d/16upQYAN6o7dlmZHrfsPkdFhVM8ti-rTk/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn primary-btn" style="font-size: 0.9rem;">
                             <i class="fas fa-play-circle"></i> Watch Video Demo
                         </a>
                     </div>
-
                     <div class="tech-stack-container">
-                        <p><strong>Key Technologies:</strong></p>
                         <div class="tech-badges">
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-code"></i> Google AppSheet
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-cogs"></i> Business Process Automation
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-database"></i> IT Asset Mgmt (ITAM)
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-file-pdf"></i> PDF Automation
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-cloud"></i> Google Cloud Database
-                            </span>
-
+                            <span class="tech-badge"><i class="fas fa-code"></i> Google AppSheet</span>
+                            <span class="tech-badge"><i class="fas fa-database"></i> IT Asset Mgmt (ITAM)</span>
+                            <span class="tech-badge"><i class="fas fa-file-pdf"></i> PDF Automation</span>
                         </div>
                     </div>
-
                 </div>
             </div>
+
             <div class="project-card">
                 <div class="project-info">
                     <div class="project-header">
@@ -554,54 +322,26 @@
                         <span class="date-badge">Aug 2025 - Oct 2025</span>
                     </div>
                     <p class="client-name"><strong>Associated with:</strong> Chesmi Consolidated</p>
-                    
-                    <p><strong>Overview:</strong> Designed and deployed a full-stack, gamified web application to train employees on Phishing and Password Security. The platform features live leaderboards, progress tracking, and secure authentication.</p>
-                    
-                    <ul class="project-bullets">
-                        <li><strong>Full-Stack Architecture:</strong> Built a responsive Frontend using <strong>Vanilla JavaScript (ES6+)</strong> and a scalable REST API Backend using <strong>Node.js & Express</strong>.</li>
-                        <li><strong>Security & Auth:</strong> Implemented secure <strong>JWT</strong> session management, <strong>bcrypt</strong> password hashing, and Role-Based Access Control (RBAC) for admin dashboards.</li>
-                        <li><strong>Database Logic:</strong> Designed complex SQL schemas on <strong>PostgreSQL (Supabase)</strong>, utilizing JOINs and aggregations to power real-time user reports and leaderboards.</li>
-                        <li><strong>CI/CD Pipeline:</strong> Automated production deployment via <strong>Vercel</strong>, integrated directly with GitHub for continuous delivery.</li>
-                    </ul>
-
+                    <p><strong>Overview:</strong> Designed and deployed a full-stack, gamified web application to train employees on Phishing and Password Security.</p>
                     <div class="hero-btns" style="margin-top: 20px; margin-bottom: 20px; justify-content: flex-start;">
-                        <a href="https://chesmi-security-training.vercel.app/" target="_blank" class="btn primary-btn" style="font-size: 0.9rem;">
+                        <a href="https://chesmi-security-training.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn primary-btn" style="font-size: 0.9rem;">
                             <i class="fas fa-rocket"></i> Launch Live App
                         </a>
-                        <a href="https://github.com/sandakelum97/chesmi-security-training" target="_blank" class="btn secondary-btn" style="font-size: 0.9rem;">
+                        <a href="https://github.com/sandakelum97/chesmi-security-training" target="_blank" rel="noopener noreferrer" class="btn secondary-btn" style="font-size: 0.9rem;">
                             <i class="fab fa-github"></i> View Source Code
                         </a>
                     </div>
-
                     <div class="tech-stack-container">
-                        <p><strong>Key Technologies:</strong></p>
                         <div class="tech-badges">
-                            
-                            <span class="tech-badge">
-                                <i class="fab fa-js"></i> Vanilla JavaScript (ES6+)
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fab fa-node-js"></i> Node.js & Express
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-database"></i> PostgreSQL (Supabase)
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-key"></i> JWT & Auth Security
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-server"></i> Vercel CI/CD
-                            </span>
-
+                            <span class="tech-badge"><i class="fab fa-js"></i> Vanilla JS</span>
+                            <span class="tech-badge"><i class="fab fa-node-js"></i> Node.js & Express</span>
+                            <span class="tech-badge"><i class="fas fa-database"></i> PostgreSQL</span>
+                            <span class="tech-badge"><i class="fas fa-key"></i> JWT Auth</span>
                         </div>
                     </div>
-
                 </div>
             </div>
+
             <div class="project-card">
                 <div class="project-info">
                     <div class="project-header">
@@ -609,67 +349,31 @@
                         <span class="date-badge">Aug 2024 - Jan 2025</span>
                     </div>
                     <p class="client-name"><strong>Associated with:</strong> Chesmi Consolidated</p>
-                    
-                    <p><strong>Overview:</strong> Designed and developed a comprehensive CRM to digitize sales operations. The system bridges the gap between field sales representatives and management by providing real-time location tracking and retailer data.</p>
-                    
-                    <ul class="project-bullets">
-                        <li><strong>Retailer & Distributor Management:</strong> Created a centralized database to profile retailers, track visit history, and monitor distributor sales performance.</li>
-                        <li><strong>Sales Force Automation:</strong> Empowered field agents with a mobile app to view retailer locations on interactive maps and log visits in real-time.</li>
-                        <li><strong>Geolocation Integration:</strong> Integrated <strong>Google Maps API</strong> to capture and visualize exact retailer locations for route optimization.</li>
-                        <li><strong>Analytics:</strong> Built reporting dashboards to analyze retailer engagement and distributor metrics, driving data-backed sales strategies.</li>
-                    </ul>
-
+                    <p><strong>Overview:</strong> Designed and developed a comprehensive CRM to digitize sales operations, bridging the gap between field sales reps and management.</p>
                     <div class="gallery-title"><i class="fas fa-map-marked-alt"></i> System Interface & Maps</div>
                     <div class="gallery-grid">
                         <div class="gallery-item">
-                            <img src="screencapture-appsheet-start-3ec4641f-97c3-41d6-bbb1-a6009d85c751-2025-11-22-22_52_19.jpg" alt="Retailer Map Visualization" onclick="window.open(this.src)">
+                            <img src="screencapture-appsheet-start-3ec4641f-97c3-41d6-bbb1-a6009d85c751-2025-11-22-22_52_19.jpg" alt="Retailer Map" onclick="window.open(this.src)">
                             <span>Retailer Geo-Mapping</span>
                         </div>
                         <div class="gallery-item">
-                            <img src="screencapture-appsheet-start-3ec4641f-97c3-41d6-bbb1-a6009d85c751-2025-11-22-22_52_56.png" alt="User Management Panel" onclick="window.open(this.src)">
+                            <img src="screencapture-appsheet-start-3ec4641f-97c3-41d6-bbb1-a6009d85c751-2025-11-22-22_52_56.png" alt="User Mgmt" onclick="window.open(this.src)">
                             <span>User & Role Management</span>
                         </div>
                         <div class="gallery-item">
-                            <img src="screencapture-appsheet-start-3ec4641f-97c3-41d6-bbb1-a6009d85c751-2025-11-22-22_52_30.jpg" alt="Distributor Network" onclick="window.open(this.src)">
+                            <img src="screencapture-appsheet-start-3ec4641f-97c3-41d6-bbb1-a6009d85c751-2025-11-22-22_52_30.jpg" alt="Distributor Map" onclick="window.open(this.src)">
                             <span>Distributor Network</span>
                         </div>
                     </div>
-
                     <div style="margin-top: 15px; margin-bottom: 15px;">
-                        <a href="https://drive.google.com/file/d/1yHSuV931RrE9djkru6dIv7rq1rYsH08J/view?usp=sharing" target="_blank" class="btn primary-btn" style="font-size: 0.9rem;">
+                        <a href="https://drive.google.com/file/d/1yHSuV931RrE9djkru6dIv7rq1rYsH08J/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="btn primary-btn" style="font-size: 0.9rem;">
                             <i class="fas fa-play-circle"></i> Watch CRM Demo
                         </a>
                     </div>
-
-                    <div class="tech-stack-container">
-                        <p><strong>Key Technologies:</strong></p>
-                        <div class="tech-badges">
-                            
-                            <span class="tech-badge">
-                                <i class="fas fa-mobile-alt"></i> Google AppSheet
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-map-marker-alt"></i> Google Maps API
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-cloud"></i> Google Cloud Platform
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-chart-line"></i> Sales Analytics
-                            </span>
-
-                            <span class="tech-badge">
-                                <i class="fas fa-users-cog"></i> Role-Based Access
-                            </span>
-
-                        </div>
-                    </div>
-
                 </div>
             </div>
+
+        </div>
     </section>
 
     <section id="training" class="section bg-light">
@@ -682,13 +386,11 @@
                     <div class="training-content">
                         <h3>Cybersecurity Awareness</h3>
                         <p class="role">Lead Instructor</p>
-                        
-                        <p style="margin-bottom: 15px;">Designed and delivered monthly awareness sessions focusing on real-world threats like phishing, social engineering, and safe browsing.</p>
-                        
+                        <p style="margin-bottom: 15px;">Designed and delivered monthly awareness sessions focusing on real-world threats.</p>
                         <ul class="training-list">
-                            <li><i class="fas fa-check"></i> Conducted sessions using gamified tools and live attack simulations to improve retention.</li>
-                            <li><i class="fas fa-check"></i> Achieved measurable reduction in risky user behavior and increased incident reporting accuracy.</li>
-                            <li><i class="fas fa-check"></i> Directly supported the organization’s Zero Trust objectives by strengthening the "human firewall."</li>
+                            <li><i class="fas fa-check"></i> Conducted sessions using gamified tools and live attack simulations.</li>
+                            <li><i class="fas fa-check"></i> Achieved measurable reduction in risky user behavior.</li>
+                            <li><i class="fas fa-check"></i> Strengthened the "human firewall" for Zero Trust compliance.</li>
                         </ul>
                     </div>
                 </div>
@@ -698,17 +400,13 @@
                     <div class="training-content">
                         <h3>Generative AI for Productivity</h3>
                         <p class="role">Workshop Lead</p>
-                        
-                        <p style="margin-bottom: 15px;">Led hands-on workshops enabling teams to adopt Gen AI for prompt engineering, document drafting, and workflow automation.</p>
-                        
+                        <p style="margin-bottom: 15px;">Led hands-on workshops enabling teams to adopt Gen AI for prompt engineering and automation.</p>
                         <ul class="training-list">
-                            <li><i class="fas fa-check"></i> Aligned training with Google Generative AI Leader best practices for enterprise-ready adoption.</li>
-                            <li><i class="fas fa-check"></i> Covered data privacy, security, and responsible AI usage to prevent data leakage.</li>
-                            <li><i class="fas fa-check"></i> Participants reported significant time savings in operational tasks and email optimization.</li>
+                            <li><i class="fas fa-check"></i> Aligned training with Google Gen AI Leader best practices.</li>
+                            <li><i class="fas fa-check"></i> Covered data privacy and responsible AI usage.</li>
                         </ul>
-
                         <div style="margin-top: 20px;">
-                            <a href="https://docs.google.com/presentation/d/1iiSSh8B7M71SQLuhQB6zXIxY26uTxVOQ/edit?usp=sharing&ouid=112727315651876900002&rtpof=true&sd=true" target="_blank" class="btn secondary-btn" style="font-size: 0.85rem; padding: 8px 15px; width: 100%;">
+                            <a href="https://docs.google.com/presentation/d/1iiSSh8B7M71SQLuhQB6zXIxY26uTxVOQ/edit?usp=sharing&ouid=112727315651876900002&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer" class="btn secondary-btn" style="font-size: 0.85rem; padding: 8px 15px; width: 100%;">
                                 <i class="fas fa-file-powerpoint"></i> View Workshop Slides
                             </a>
                         </div>
@@ -720,13 +418,10 @@
                     <div class="training-content">
                         <h3>Google Workspace Optimization</h3>
                         <p class="role">System Trainer</p>
-                        
-                        <p style="margin-bottom: 15px;">Conducted structured training to upskill departments on Gmail, Drive, Meet, and collaboration best practices.</p>
-                        
+                        <p style="margin-bottom: 15px;">Conducted training to upskill departments on collaboration and security best practices.</p>
                         <ul class="training-list">
-                            <li><i class="fas fa-check"></i> Transitioned teams from siloed workflows to real-time cloud collaboration, maximizing ROI.</li>
-                            <li><i class="fas fa-check"></i> Focused on access control, version management, and security-aware usage.</li>
-                            <li><i class="fas fa-check"></i> Provided role-based guidance for admin staff and technical teams to ensure long-term efficiency.</li>
+                            <li><i class="fas fa-check"></i> Transitioned teams to real-time cloud collaboration.</li>
+                            <li><i class="fas fa-check"></i> Focused on access control and version management.</li>
                         </ul>
                     </div>
                 </div>
@@ -735,7 +430,7 @@
         </div>
     </section>
 
-   <section id="qualifications" class="section">
+    <section id="qualifications" class="section">
         <div class="container">
             <h2 class="section-title">Qualifications & Credentials</h2>
             
@@ -760,11 +455,10 @@
                                 <h4>Diploma in Network Engineering</h4>
                                 <p class="school">National Institute of Business Management (NIBM)</p>
                             </div>
-                            <a href="YOUR_DIPLOMA_DRIVE_LINK_HERE" target="_blank" class="cert-link-icon" title="View Certificate">
+                            <a href="https://drive.google.com/file/d/1xYZCSBN7HszPN182vPOWvRlURWMF4fzL/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="cert-link-icon" title="View Certificate">
                                 <i class="fas fa-file-alt"></i>
                             </a>
                         </div>
-                        
                         <div class="edu-meta">
                             <span class="year">Jan 2019 - Feb 2021</span>
                             <span class="year">Completed</span>
@@ -783,90 +477,20 @@
                     <p class="small-text">Click any item to verify the credential:</p>
                     
                     <ul class="cert-list">
-                        <li>
-                            <a href="https://www.credly.com/badges/07a6b0d6-e5f3-4427-8890-2c9fc4ecfbd2/public_url" target="_blank">
-                                <strong>Google</strong> Generative AI Leader
-                            </a>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
-
-                        <li>
-                            <a href="https://drive.google.com/file/d/1m-XZa5QY-RQmqBoT8gFukYTuoK-gpe1V/view?usp=sharing" target="_blank">
-                                <strong>KodeKloud</strong> DevOps Engineer (L1)
-                            </a>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
-
-                        <li>
-                            <a href="https://www.credly.com/badges/d2c315ef-d842-4454-a41a-1fb5c53b277c/public_url" target="_blank">
-                                <strong>Google</strong> Cybersecurity Professional
-                            </a>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
-
-                        <li>
-                            <a href="https://drive.google.com/file/d/1uKYMC2NrfMDM2UPpooruILtKMFJ9hbm9/view?usp=sharing" target="_blank">
-                                <strong>SecOps</strong> Certified Network Security Practitioner
-                            </a>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
-
-                        <li>
-                            <a href="https://www.coursera.org/account/accomplishments/specialization/AHTYECHNGF3E" target="_blank">
-                                <strong>Google</strong> Professional Workspace Admin
-                            </a>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
-
-                        <li>
-                            <a href="https://www.credly.com/badges/08c746d8-8380-463a-9a2b-174eca1cc1bd/public_url" target="_blank">
-                                <strong>Cisco</strong> DevNet Associate
-                            </a>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
-
-                        <li>
-                            <a href="https://www.credly.com/badges/b5fe8959-de60-4a7a-924d-a27e52114d94/public_url" target="_blank">
-                                <strong>ISC2</strong> Certified in Cybersecurity (CC)
-                            </a>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
-
-                        <li>
-                            <a href="https://app.cybrary.it/courses/api/certificate/CC-063bc603-ca1b-493c-9b33-819159300e5c/view" target="_blank">
-                                <strong>MITRE</strong> ATT&CK® Defender Fundamentals
-                            </a>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
-
-                        <li>
-                            <a href="https://www.credly.com/badges/492d9ba3-94a2-43b1-86b6-b454bb4c5ec6/public_url" target="_blank">
-                                <strong>Cisco</strong> CyberOps Associate
-                            </a>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
-
-                        <li>
-                            <a href="https://www.credly.com/badges/1fe74670-a2ae-48ad-91bc-5ac1ee51525d/public_url" target="_blank">
-                                <strong>Microsoft</strong> Azure Fundamentals (AZ-900)
-                            </a>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
-
-                        <li>
-                            <a href="https://www.credly.com/badges/7dffab4b-e334-47fc-9370-8c45233a4413/public_url" target="_blank">
-                                <strong>Cisco</strong> CCNA (Enterprise & Security)
-                            </a>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
-
-                        <li>
-                            <span style="cursor: default;"><strong>Fortinet</strong> NSE 3 Network Security</span>
-                            <i class="fas fa-check-circle" style="color: var(--accent);"></i>
-                        </li>
+                        <li><a href="https://www.credly.com/badges/07a6b0d6-e5f3-4427-8890-2c9fc4ecfbd2/public_url" target="_blank" rel="noopener noreferrer"><strong>Google</strong> Generative AI Leader</a> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
+                        <li><a href="https://drive.google.com/file/d/1m-XZa5QY-RQmqBoT8gFukYTuoK-gpe1V/view?usp=sharing" target="_blank" rel="noopener noreferrer"><strong>KodeKloud</strong> DevOps Engineer (L1)</a> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
+                        <li><a href="https://www.credly.com/badges/d2c315ef-d842-4454-a41a-1fb5c53b277c/public_url" target="_blank" rel="noopener noreferrer"><strong>Google</strong> Cybersecurity Professional</a> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
+                        <li><a href="https://drive.google.com/file/d/1uKYMC2NrfMDM2UPpooruILtKMFJ9hbm9/view?usp=sharing" target="_blank" rel="noopener noreferrer"><strong>SecOps</strong> Certified Network Security Practitioner</a> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
+                        <li><a href="https://www.coursera.org/account/accomplishments/specialization/AHTYECHNGF3E" target="_blank" rel="noopener noreferrer"><strong>Google</strong> Professional Workspace Admin</a> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
+                        <li><a href="https://www.credly.com/badges/08c746d8-8380-463a-9a2b-174eca1cc1bd/public_url" target="_blank" rel="noopener noreferrer"><strong>Cisco</strong> DevNet Associate</a> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
+                        <li><a href="https://www.credly.com/badges/b5fe8959-de60-4a7a-924d-a27e52114d94/public_url" target="_blank" rel="noopener noreferrer"><strong>ISC2</strong> Certified in Cybersecurity (CC)</a> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
+                        <li><a href="https://app.cybrary.it/courses/api/certificate/CC-063bc603-ca1b-493c-9b33-819159300e5c/view" target="_blank" rel="noopener noreferrer"><strong>MITRE</strong> ATT&CK® Defender Fundamentals</a> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
+                        <li><a href="https://www.credly.com/badges/492d9ba3-94a2-43b1-86b6-b454bb4c5ec6/public_url" target="_blank" rel="noopener noreferrer"><strong>Cisco</strong> CyberOps Associate</a> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
+                        <li><a href="https://www.credly.com/badges/1fe74670-a2ae-48ad-91bc-5ac1ee51525d/public_url" target="_blank" rel="noopener noreferrer"><strong>Microsoft</strong> Azure Fundamentals (AZ-900)</a> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
+                        <li><a href="https://www.credly.com/badges/7dffab4b-e334-47fc-9370-8c45233a4413/public_url" target="_blank" rel="noopener noreferrer"><strong>Cisco</strong> CCNA (Enterprise & Security)</a> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
+                        <li><span style="cursor: default;"><strong>Fortinet</strong> NSE 3 Network Security</span> <i class="fas fa-check-circle" style="color: var(--accent);"></i></li>
                     </ul>
                 </div>
-
             </div>
         </div>
     </section>
@@ -876,9 +500,9 @@
             <h2>Let's Connect</h2>
             <p>Actively exploring opportunities worldwide, across Remote, Hybrid, and On-site engagements.</p>
             <div class="social-links">
-                <a href="mailto:sandakelum.97@gmail.com">sandakelum.97@gmail.com</a>
+                <a href="mailto:sandakelum.97&#64;gmail&#46;com">sandakelum.97&#64;gmail&#46;com</a>
                 <a href="callto:+94767165691">+94767165691</a>
-                <a href="https://www.linkedin.com/in/tharaka-dissanayaka/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/tharaka-dissanayaka/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             </div>
             <p class="copyright">&copy; 2025 Tharaka Dissanayaka.</p>
         </div>
