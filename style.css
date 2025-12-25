@@ -1,0 +1,84 @@
+/* General Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { line-height: 1.6; color: #333; background-color: #fff; }
+
+/* Variables */
+:root {
+    --primary: #0a192f;   /* Dark Navy */
+    --accent: #64ffda;    /* Tech Cyan */
+    --light-bg: #f8f9fa;
+    --text-grey: #8892b0;
+}
+
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+
+/* Navbar */
+.navbar { background: var(--primary); padding: 1rem 0; position: sticky; top: 0; z-index: 1000; }
+.navbar .container { display: flex; justify-content: space-between; align-items: center; }
+.logo { color: var(--accent); font-size: 1.5rem; font-weight: bold; }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { color: #ccd6f6; text-decoration: none; font-size: 0.9rem; }
+.nav-links a:hover { color: var(--accent); }
+
+/* Hero */
+.hero { background: var(--primary); color: #ccd6f6; padding: 80px 0; text-align: center; }
+.hero h1 { font-size: 3rem; color: #fff; }
+.hero h2 { color: var(--accent); font-weight: 400; margin-bottom: 20px; }
+.hero-btns { margin-top: 30px; }
+
+.btn { display: inline-block; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; margin: 0 5px; border: 1px solid var(--accent); }
+.primary-btn { background: var(--accent); color: var(--primary); }
+.secondary-btn { background: transparent; color: var(--accent); }
+
+/* Sections */
+.section { padding: 60px 0; border-bottom: 1px solid #eaeaea; }
+.bg-light { background-color: var(--light-bg); }
+.section-title { font-size: 2rem; color: var(--primary); margin-bottom: 30px; border-left: 5px solid var(--accent); padding-left: 15px; }
+
+/* Project Cards */
+.project-card { background: #fff; padding: 25px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+.project-card h3 { color: #000; margin-bottom: 10px; }
+.tags { margin-bottom: 15px; }
+.tag { font-size: 0.8rem; background: #e0f7fa; color: #006064; padding: 3px 8px; border-radius: 4px; margin-right: 5px; }
+.project-links { margin-top: 15px; }
+.link-disabled { color: #999; text-decoration: none; font-size: 0.9rem; cursor: not-allowed; }
+
+/* Training Grid */
+.training-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.training-card { background: #fff; padding: 20px; border-radius: 5px; border-top: 3px solid var(--accent); box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+.training-card .icon-box { font-size: 1.5rem; color: var(--primary); margin-bottom: 10px; }
+.training-card .role { font-size: 0.85rem; font-weight: bold; color: #555; text-transform: uppercase; margin-bottom: 8px; }
+
+/* Qualifications Split */
+.qualifications-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+.col-title { color: var(--primary); margin-bottom: 20px; padding-bottom: 5px; border-bottom: 2px solid #ddd; }
+.edu-card { background: #fff; padding: 15px; margin-bottom: 15px; border-left: 3px solid var(--primary); }
+.status-badge { background: #ffebee; color: #c62828; padding: 2px 6px; font-size: 0.75rem; border-radius: 3px; font-weight: bold; }
+.cert-list { list-style: none; }
+.cert-list li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; }
+.small-text { font-size: 0.8rem; color: #666; margin-bottom: 10px; font-style: italic; }
+
+/* Footer */
+.footer { background: var(--primary); color: #8892b0; text-align: center; padding: 40px 0; }
+.social-links a { color: var(--accent); margin: 0 10px; text-decoration: none; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .qualifications-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2rem; }
+}
+
+/* === PRINT MODE (For UAE Interviews) === */
+@media print {
+    body { background: white; color: black; }
+    .navbar, .hero-btns, .footer, .icon-box { display: none; }
+    .hero { background: none; color: black; padding: 0; border-bottom: 2px solid black; text-align: left; margin-bottom: 20px; }
+    .hero h1 { color: black; margin-bottom: 5px; }
+    .hero h2 { color: #444; font-size: 14pt; }
+    .section { padding: 15px 0; border: none; page-break-inside: avoid; }
+    .section-title { font-size: 14pt; border-left: none; border-bottom: 1px solid #ccc; padding-left: 0; margin-bottom: 10px; }
+    .project-card, .training-card, .edu-card { box-shadow: none; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
+    .qualifications-grid { gap: 20px; }
+    a { text-decoration: none; color: black; }
+}
