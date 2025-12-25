@@ -457,3 +457,135 @@ body {
     
     a { text-decoration: none; color: black; }
 }
+/* === PROJECT CARD ENHANCEMENTS === */
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.date-badge {
+    background: #e3f2fd;
+    color: #0d47a1;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.client-name {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.project-bullets {
+    margin: 15px 0 15px 20px;
+}
+
+.project-bullets li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+/* === DIAGRAM GALLERY === */
+.gallery-title {
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.gallery-item {
+    text-align: center;
+    border: 1px solid #eee;
+    padding: 5px;
+    border-radius: 5px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    background: #fff;
+}
+
+.gallery-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 140px; /* Fixed height for uniformity */
+    object-fit: contain; /* Keeps entire diagram visible */
+    cursor: pointer; /* Shows it's clickable */
+    border-radius: 3px;
+}
+
+.gallery-item span {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* === TECH LOGOS === */
+.tech-stack-container {
+    margin-top: 20px;
+    border-top: 1px dashed #ddd;
+    padding-top: 15px;
+}
+
+.tech-logos {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.tech-logos img {
+    height: 35px; /* Controls logo size */
+    width: auto;
+    filter: grayscale(100%); /* Makes logos grey until hovered */
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.tech-logos img:hover {
+    filter: grayscale(0%); /* Shows color on hover */
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+/* Print adjustments for the new elements */
+@media print {
+    .gallery-grid {
+        display: block; /* Stack images on print so they are large enough */
+    }
+    .gallery-item {
+        margin-bottom: 10px;
+        page-break-inside: avoid;
+        border: 1px solid #ccc;
+    }
+    .gallery-item img {
+        height: auto;
+        max-height: 200px;
+    }
+    .tech-logos img {
+        filter: grayscale(0%); /* Print logos in color/black */
+        opacity: 1;
+    }
+}
