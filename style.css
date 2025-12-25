@@ -22,10 +22,105 @@ body { line-height: 1.6; color: #333; background-color: #fff; }
 .nav-links a:hover { color: var(--accent); }
 
 /* Hero */
-.hero { background: var(--primary); color: #ccd6f6; padding: 80px 0; text-align: center; }
-.hero h1 { font-size: 3rem; color: #fff; }
-.hero h2 { color: var(--accent); font-weight: 400; margin-bottom: 20px; }
-.hero-btns { margin-top: 30px; }
+/* Hero Section - LinkedIn Style */
+.hero {
+    background: var(--primary);
+    color: #ccd6f6;
+    padding: 80px 0;
+    /* Removed text-align: center so text aligns left */
+}
+
+.hero-content {
+    display: flex;          /* This puts image and text side-by-side */
+    align-items: center;    /* Vertically centers them */
+    justify-content: center;
+    gap: 50px;              /* Space between photo and text */
+}
+
+/* The Image Container */
+.profile-img {
+    width: 200px;           /* Slightly larger for this layout */
+    height: 200px;
+    border-radius: 50%;     /* Circle */
+    border: 4px solid var(--accent);
+    object-fit: cover;
+    box-shadow: 0 0 25px rgba(100, 255, 218, 0.2);
+    display: block;         /* Fixes alignment issues */
+}
+
+/* The Text Container */
+.hero-text {
+    text-align: left;       /* Aligns text to the left like LinkedIn */
+    max-width: 600px;       /* Prevents text from stretching too wide */
+}
+
+.hero h1 {
+    font-size: 3.5rem;      /* Larger name */
+    color: #fff;
+    margin-bottom: 5px;
+    line-height: 1.1;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: var(--accent);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #8892b0;
+    margin-bottom: 25px;
+}
+
+.hero-btns {
+    margin-top: 10px;
+    /* No margin changes needed, but ensuring they align left */
+}
+
+/* MOBILE RESPONSIVE (Important!) */
+/* On phones, we want it to stack back to center so it doesn't look squished */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column; /* Stack top to bottom */
+        text-align: center;     /* Center text on mobile */
+    }
+    
+    .hero-text {
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .hero h1 { font-size: 2.2rem; }
+}
+
+/* PRINT MODE */
+@media print {
+    .hero-content {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 1px solid #000;
+        padding-bottom: 20px;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        border: 1px solid #000;
+        box-shadow: none;
+    }
+    .hero-text {
+        color: black;
+        padding-left: 20px;
+    }
+    .hero h1 { color: black; font-size: 24pt; }
+    .hero h2, .hero p { color: black; }
+}
 
 .btn { display: inline-block; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; margin: 0 5px; border: 1px solid var(--accent); }
 .primary-btn { background: var(--accent); color: var(--primary); }
