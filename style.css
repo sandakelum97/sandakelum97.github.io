@@ -589,3 +589,48 @@ body {
         opacity: 1;
     }
 }
+/* === TECH BADGES (Font Awesome Style) === */
+.tech-stack-container {
+    margin-top: 20px;
+    border-top: 1px dashed #ddd;
+    padding-top: 15px;
+}
+
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tech-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    padding: 6px 12px;
+    border-radius: 20px; /* Rounded pill shape */
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #495057;
+    transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+    background: #e3f2fd;
+    border-color: #bbdefb;
+    color: #0d47a1;
+    transform: translateY(-2px);
+}
+
+.tech-badge i {
+    margin-right: 8px;
+    font-size: 1rem;
+    color: var(--primary); /* Uses your Navy Blue theme */
+}
+
+/* Specific Brand Colors (Optional Polish) */
+.tech-badge .fa-windows { color: #0078d4; }      /* Windows Blue */
+.tech-badge .fa-shield-alt { color: #e65100; }   /* SonicWall Orange-ish */
+.tech-badge .fa-server { color: #424242; }       /* Dell Grey */
+.tech-badge .fa-layer-group { color: #607d8b; }  /* VMware Grey/Blue */
