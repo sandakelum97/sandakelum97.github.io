@@ -459,11 +459,58 @@ body {
 
 /* === MOBILE RESPONSIVE === */
 @media (max-width: 850px) {
-    .hero-content { flex-direction: column; text-align: center; gap: 30px; }
-    .hero-text { align-items: center; text-align: center; }
-    .hero-btns { justify-content: center; }
+    
+    /* 1. Fix the Navigation Bar */
+    .navbar .container {
+        flex-direction: column; /* Stacks Logo and Links vertically */
+        gap: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column; /* Stacks the links themselves */
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 10px 0; /* Adds space between links */
+        margin-left: 0; /* Removes the left margin used on desktop */
+    }
+
+    /* 2. Fix the Hero Section (Image & Text) */
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .hero-text {
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero-btns {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .hero h1 { font-size: 2.5rem; }
-    .qualifications-grid { grid-template-columns: 1fr; }
+    
+    /* 3. Fix the Qualifications Grid */
+    .qualifications-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* 4. Fix Experience Timeline Header */
+    .timeline-header {
+        flex-direction: column;
+    }
+    
+    .timeline-date {
+        align-self: flex-start;
+        margin-bottom: 10px;
+    }
 }
 
 /* === PRINT MODE === */
