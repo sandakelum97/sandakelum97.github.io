@@ -501,103 +501,94 @@ body {
     .qualifications-grid { gap: 20px; }
     a { text-decoration: none; color: black; }
 }
-/* === EXPERIENCE TIMELINE === */
+/* === EXPERIENCE TILES (New Layout) === */
 .timeline {
-    position: relative;
     max-width: 900px;
     margin: 0 auto;
     padding: 20px 0;
-}
-
-/* The vertical line */
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 3px;
-    background-color: #e9ecef;
-    top: 0;
-    bottom: 0;
-    left: 20px; /* Line position */
-    margin-left: -1.5px;
+    /* Removed the vertical line for a cleaner "Tile" look */
 }
 
 .timeline-item {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Space between tiles */
+    transition: transform 0.2s ease;
 }
 
-/* The Dots on the line */
-.timeline-item::after {
-    content: '';
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    right: auto;
-    background-color: var(--white);
-    border: 3px solid var(--accent);
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-    left: 11px; /* Adjust to center on line */
+.timeline-item:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
 }
 
 .timeline-content {
-    padding: 20px 30px;
-    background-color: white;
-    position: relative;
-    border-radius: 6px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    border-left: 4px solid var(--primary); /* Navy accent on card */
+    background-color: var(--white);
+    padding: 25px 30px;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Floating shadow */
+    border-left: 5px solid var(--primary); /* Accent color on the left */
+    border-top: 1px solid #eee; /* Subtle border for definition */
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+/* Distinct color for contract roles */
+.job-contract {
+    border-left-color: #ff9f43; /* Orange accent */
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .timeline-date {
-    display: inline-block;
     background: #e3f2fd;
     color: var(--primary);
-    padding: 4px 10px;
-    border-radius: 4px;
+    padding: 6px 12px;
+    border-radius: 20px;
     font-size: 0.85rem;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-weight: 700;
+    white-space: nowrap;
 }
 
 .timeline-content h3 {
-    margin-top: 0;
+    margin: 0;
     color: var(--primary);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+    line-height: 1.2;
 }
 
 .timeline-content h4 {
+    margin: 5px 0 0 0;
     font-size: 1rem;
-    color: #555;
-    margin-bottom: 15px;
-    font-weight: 600;
+    color: #666;
+    font-weight: 500;
 }
 
 .timeline-content ul {
-    list-style-type: none;
-    padding-left: 0;
+    margin-top: 15px;
+    padding-left: 20px;
+    list-style-type: disc;
 }
 
 .timeline-content li {
     margin-bottom: 8px;
-    position: relative;
-    padding-left: 20px;
-    font-size: 0.95rem;
     color: #444;
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
-.timeline-content li::before {
-    content: '▹';
-    position: absolute;
-    left: 0;
-    color: var(--accent);
-    font-weight: bold;
+/* Mobile Adjustment */
+@media (max-width: 600px) {
+    .timeline-header {
+        flex-direction: column;
+    }
+    .timeline-date {
+        order: -1; /* Puts date on top for mobile */
+        align-self: flex-start;
+        margin-bottom: 5px;
+    }
 }
-
-/* Specific Border Colors for different job types */
-.job-fulltime { border-left-color: var(--primary); }
-.job-contract { border-left-color: #ff9f43; } /* Orange for contract */
