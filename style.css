@@ -634,3 +634,23 @@ body {
 .tech-badge .fa-shield-alt { color: #e65100; }   /* SonicWall Orange-ish */
 .tech-badge .fa-server { color: #424242; }       /* Dell Grey */
 .tech-badge .fa-layer-group { color: #607d8b; }  /* VMware Grey/Blue */
+
+/* Certificate Link Icon */
+.cert-link-icon {
+    background: #e0f7fa;
+    color: #006064;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.cert-link-icon:hover {
+    transform: scale(1.1);
+    background: var(--accent);
+    color: var(--primary);
+}
