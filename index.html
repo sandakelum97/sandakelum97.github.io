@@ -64,19 +64,52 @@
         <div class="container">
             <h2 class="section-title">Infrastructure & Security Projects</h2>
             
-            <div class="project-card">
+<div class="project-card">
                 <div class="project-info">
-                    <h3>Data Center Migration & Virtualization</h3>
-                    <div class="tags">
-                        <span class="tag">VMware ESXi 7</span> <span class="tag">Dell R440</span> <span class="tag">Disaster Recovery</span>
+                    <div class="project-header">
+                        <h3>Data Center Server Migration & Infrastructure Enhancement</h3>
+                        <span class="date-badge">Nov 2021 - Mar 2022</span>
                     </div>
-                    <p><strong>Challenge:</strong> Legacy servers were nearing end-of-life, creating risks for ERP stability and business continuity.</p>
-                    <p><strong>Solution:</strong> Architected a full migration to Dell R440 servers running VMware ESXi 7. Integrated NAS-based backups (QSAN) and AD-based authentication.</p>
-                    <p><strong>Result:</strong> Established a high-availability environment with robust Disaster Recovery procedures.</p>
+                    <p class="client-name"><strong>Associated with:</strong> Chesmi Consolidated (pvt) Ltd.</p>
                     
-                    <div class="project-links">
-                        <a href="#" class="link-disabled"><i class="fas fa-image"></i> View Architecture Diagram (Coming Soon)</a>
+                    <p><strong>Overview:</strong> Led a critical infrastructure overhaul to replace aging legacy hardware (Dell T110 ii) with a modern, virtualized environment. The goal was to ensure high availability, redundancy, and centralized management.</p>
+                    
+                    <ul class="project-bullets">
+                        <li><strong>Virtualization:</strong> Migrated 3 bare-metal servers to 2 <strong>Dell R440</strong> hosts running <strong>VMware ESXi 7</strong>.</li>
+                        <li><strong>OS Modernization:</strong> Upgraded MS Dynamics NAV (Server 2019 → 2022) and Active Directory (Server 2008 R2 → 2016).</li>
+                        <li><strong>Physical Upgrades:</strong> Renovated server room with new racks, redundant UPS systems, and dual-WAN load balancing.</li>
+                        <li><strong>Security:</strong> Deployed <strong>SonicWall</strong> firewalls with LDAP-integrated SSL VPN for secure remote access.</li>
+                        <li><strong>Backup Strategy:</strong> Configured <strong>Nakivo</strong> Backup & Replication on a <strong>QSAN NAS</strong> for disaster recovery.</li>
+                    </ul>
+
+                    <div class="gallery-title"><i class="fas fa-project-diagram"></i> Architecture Diagrams</div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <img src="Legacy server infra.jpg" alt="Legacy Infrastructure" onclick="window.open(this.src)">
+                            <span>Before: Legacy</span>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="after migration server infra.jpg" alt="New Architecture" onclick="window.open(this.src)">
+                            <span>After: Virtualized</span>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="external access after migration.jpg" alt="VPN Access Flow" onclick="window.open(this.src)">
+                            <span>External Access</span>
+                        </div>
                     </div>
+
+                    <div class="tech-stack-container">
+                        <p><strong>Technologies Used:</strong></p>
+                        <div class="tech-logos">
+                            <img src="logo-dell.png" alt="Dell" title="Dell PowerEdge">
+                            <img src="logo-vmware.png" alt="VMware" title="ESXi 7">
+                            <img src="logo-windows.png" alt="Windows Server" title="Server 2019/2022">
+                            <img src="logo-sonicwall.png" alt="SonicWall" title="Firewall & VPN">
+                            <img src="logo-nakivo.png" alt="Nakivo" title="Backup & Replication">
+                            <img src="logo-qsan.png" alt="QSAN" title="NAS Storage">
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
