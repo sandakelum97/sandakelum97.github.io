@@ -53,9 +53,7 @@ body {
     display: flex;
 }
 
-.nav-links li {
-    margin-left: 20px;
-}
+.nav-links li { margin-left: 20px; }
 
 .nav-links a {
     color: #ccd6f6;
@@ -64,11 +62,9 @@ body {
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
-    color: var(--accent);
-}
+.nav-links a:hover { color: var(--accent); }
 
-/* === HERO SECTION (Fixed Layout) === */
+/* === HERO SECTION === */
 .hero {
     background: var(--primary);
     color: #ccd6f6;
@@ -76,33 +72,29 @@ body {
 }
 
 .hero-content {
-    display: flex;           /* Puts Image and Text side-by-side */
-    align-items: center;     /* Centers them vertically */
-    justify-content: center; /* Centers them horizontally */
-    gap: 50px;               /* Space between the Image and Text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
     max-width: 1000px;
     margin: 0 auto;
 }
 
-/* 1. Image Styling */
-.hero-image-wrapper {
-    flex-shrink: 0;          /* Prevents image from being squashed */
-}
+.hero-image-wrapper { flex-shrink: 0; }
 
 .profile-img {
     width: 220px;
     height: 220px;
-    border-radius: 50%;      /* Makes it a perfect circle */
+    border-radius: 50%;
     border: 4px solid var(--accent);
     object-fit: cover;
     box-shadow: 0 0 30px rgba(100, 255, 218, 0.15);
     display: block;
 }
 
-/* 2. Text Styling */
 .hero-text {
     display: flex;
-    flex-direction: column;  /* Stacks Name, Title, Desc vertically */
+    flex-direction: column;
     text-align: left;
     max-width: 600px;
 }
@@ -129,13 +121,14 @@ body {
     margin-bottom: 30px;
 }
 
-/* 3. Buttons Styling */
 .hero-btns {
     display: flex;
-    flex-direction: row;     /* Forces buttons to sit side-by-side */
+    flex-direction: row;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
+/* Button Styling */
 .btn {
     display: inline-flex;
     align-items: center;
@@ -156,9 +149,7 @@ body {
     border: 1px solid var(--accent);
 }
 
-.primary-btn:hover {
-    background: rgba(100, 255, 218, 0.8);
-}
+.primary-btn:hover { background: rgba(100, 255, 218, 0.8); }
 
 .secondary-btn {
     background: transparent;
@@ -166,19 +157,11 @@ body {
     border: 1px solid var(--accent);
 }
 
-.secondary-btn:hover {
-    background: rgba(100, 255, 218, 0.1);
-}
+.secondary-btn:hover { background: rgba(100, 255, 218, 0.1); }
 
 /* === SECTIONS === */
-.section {
-    padding: 80px 0;
-    border-bottom: 1px solid #eaeaea;
-}
-
-.bg-light {
-    background-color: var(--light-bg);
-}
+.section { padding: 80px 0; border-bottom: 1px solid #eaeaea; }
+.bg-light { background-color: var(--light-bg); }
 
 .section-title {
     font-size: 2rem;
@@ -198,266 +181,7 @@ body {
     transition: transform 0.2s;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-card h3 {
-    color: #000;
-    margin-bottom: 10px;
-    font-size: 1.4rem;
-}
-
-.tags {
-    margin-bottom: 15px;
-}
-
-.tag {
-    display: inline-block;
-    font-size: 0.8rem;
-    background: #e0f7fa;
-    color: #006064;
-    padding: 4px 10px;
-    border-radius: 4px;
-    margin-right: 5px;
-    margin-bottom: 5px;
-    font-weight: 600;
-}
-
-.project-links {
-    margin-top: 20px;
-}
-
-.link-disabled {
-    color: #999;
-    text-decoration: none;
-    font-size: 0.9rem;
-    cursor: not-allowed;
-    display: inline-flex;
-    align-items: center;
-}
-
-.link-disabled i { margin-right: 5px; }
-
-/* === TRAINING GRID === */
-.training-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.training-card {
-    background: var(--white);
-    padding: 25px;
-    border-radius: 5px;
-    border-top: 3px solid var(--accent);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.training-card .icon-box {
-    font-size: 2rem;
-    color: var(--primary);
-    margin-bottom: 15px;
-}
-
-.training-card .role {
-    font-size: 0.85rem;
-    font-weight: bold;
-    color: #555;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    letter-spacing: 0.5px;
-}
-
-/* === QUALIFICATIONS SPLIT === */
-.qualifications-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-}
-
-.col-title {
-    color: var(--primary);
-    margin-bottom: 25px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #ddd;
-    font-size: 1.5rem;
-}
-
-.edu-card {
-    background: var(--white);
-    padding: 20px;
-    margin-bottom: 20px;
-    border-left: 4px solid var(--primary);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.edu-card h4 {
-    margin-bottom: 5px;
-}
-
-.edu-card .school {
-    color: #666;
-    margin-bottom: 8px;
-}
-
-.status-badge {
-    background: #ffebee;
-    color: #c62828;
-    padding: 3px 8px;
-    font-size: 0.75rem;
-    border-radius: 3px;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.year {
-    background: #e8f5e9;
-    color: #2e7d32;
-    padding: 3px 8px;
-    font-size: 0.75rem;
-    border-radius: 3px;
-    font-weight: bold;
-}
-
-.cert-list {
-    list-style: none;
-}
-
-.cert-list li {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 0;
-    border-bottom: 1px solid #eee;
-}
-
-.small-text {
-    font-size: 0.85rem;
-    color: #666;
-    margin-bottom: 15px;
-    font-style: italic;
-}
-
-/* === FOOTER === */
-.footer {
-    background: var(--primary);
-    color: var(--text-grey);
-    text-align: center;
-    padding: 50px 0;
-}
-
-.footer h2 { color: var(--white); margin-bottom: 10px; }
-
-.social-links { margin: 20px 0; }
-
-.social-links a {
-    color: var(--accent);
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.copyright { font-size: 0.9rem; opacity: 0.8; }
-
-/* === MOBILE RESPONSIVE === */
-@media (max-width: 850px) {
-    /* Stack the Hero Section */
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
-        gap: 30px;
-    }
-
-    .hero-text {
-        align-items: center;
-        text-align: center;
-    }
-
-    .hero-btns {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .hero h1 { font-size: 2.5rem; }
-    
-    /* Stack the Qualifications */
-    .qualifications-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* === PRINT MODE (For UAE Interviews) === */
-@media print {
-    body { background: white; color: black; }
-    
-    /* Hide non-printable elements */
-    .navbar, .hero-btns, .footer, .icon-box, .project-links { display: none; }
-    
-    /* Adjust Hero for Print */
-    .hero {
-        background: none;
-        color: black;
-        padding: 0;
-        border-bottom: 2px solid black;
-        margin-bottom: 20px;
-    }
-
-    .hero-content {
-        display: flex;
-        flex-direction: row; /* Keep side-by-side for print */
-        align-items: flex-start;
-        gap: 20px;
-        text-align: left;
-    }
-
-    .profile-img {
-        width: 120px;
-        height: 120px;
-        border: 1px solid #000;
-        box-shadow: none;
-    }
-
-    .hero-text {
-        display: block;
-        color: black;
-    }
-
-    .hero h1 { color: black; font-size: 24pt; margin-bottom: 5px; }
-    .hero h2 { color: #444; font-size: 14pt; margin-bottom: 10px; }
-    .hero-desc { color: black; font-size: 11pt; margin-bottom: 0; }
-
-    /* Adjust Sections */
-    .section {
-        padding: 15px 0;
-        border: none;
-        page-break-inside: avoid;
-    }
-
-    .section-title {
-        font-size: 16pt;
-        border-left: none;
-        border-bottom: 1px solid #ccc;
-        padding-left: 0;
-        margin-bottom: 15px;
-        color: black;
-    }
-
-    /* Adjust Cards */
-    .project-card, .training-card, .edu-card {
-        box-shadow: none;
-        border: 1px solid #ddd;
-        padding: 10px;
-        margin-bottom: 10px;
-        page-break-inside: avoid;
-    }
-
-    .qualifications-grid {
-        gap: 20px;
-    }
-    
-    a { text-decoration: none; color: black; }
-}
-/* === PROJECT CARD ENHANCEMENTS === */
+.project-card:hover { transform: translateY(-5px); }
 
 .project-header {
     display: flex;
@@ -466,6 +190,8 @@ body {
     margin-bottom: 10px;
     flex-wrap: wrap;
 }
+
+.project-card h3 { color: #000; margin-bottom: 10px; font-size: 1.4rem; }
 
 .date-badge {
     background: #e3f2fd;
@@ -485,15 +211,8 @@ body {
     padding-bottom: 10px;
 }
 
-.project-bullets {
-    margin: 15px 0 15px 20px;
-}
-
-.project-bullets li {
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-    color: #444;
-}
+.project-bullets { margin: 15px 0 15px 20px; }
+.project-bullets li { margin-bottom: 8px; font-size: 0.95rem; color: #444; }
 
 /* === DIAGRAM GALLERY === */
 .gallery-title {
@@ -527,9 +246,9 @@ body {
 
 .gallery-item img {
     width: 100%;
-    height: 140px; /* Fixed height for uniformity */
-    object-fit: contain; /* Keeps entire diagram visible */
-    cursor: pointer; /* Shows it's clickable */
+    height: 140px;
+    object-fit: contain;
+    cursor: pointer;
     border-radius: 3px;
 }
 
@@ -541,55 +260,7 @@ body {
     font-weight: 600;
 }
 
-/* === TECH LOGOS === */
-.tech-stack-container {
-    margin-top: 20px;
-    border-top: 1px dashed #ddd;
-    padding-top: 15px;
-}
-
-.tech-logos {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
-}
-
-.tech-logos img {
-    height: 35px; /* Controls logo size */
-    width: auto;
-    filter: grayscale(100%); /* Makes logos grey until hovered */
-    opacity: 0.7;
-    transition: all 0.3s ease;
-}
-
-.tech-logos img:hover {
-    filter: grayscale(0%); /* Shows color on hover */
-    opacity: 1;
-    transform: scale(1.1);
-}
-
-/* Print adjustments for the new elements */
-@media print {
-    .gallery-grid {
-        display: block; /* Stack images on print so they are large enough */
-    }
-    .gallery-item {
-        margin-bottom: 10px;
-        page-break-inside: avoid;
-        border: 1px solid #ccc;
-    }
-    .gallery-item img {
-        height: auto;
-        max-height: 200px;
-    }
-    .tech-logos img {
-        filter: grayscale(0%); /* Print logos in color/black */
-        opacity: 1;
-    }
-}
-/* === TECH BADGES (Font Awesome Style) === */
+/* === TECH BADGES === */
 .tech-stack-container {
     margin-top: 20px;
     border-top: 1px dashed #ddd;
@@ -609,7 +280,7 @@ body {
     background: #f8f9fa;
     border: 1px solid #e9ecef;
     padding: 6px 12px;
-    border-radius: 20px; /* Rounded pill shape */
+    border-radius: 20px;
     font-size: 0.85rem;
     font-weight: 600;
     color: #495057;
@@ -626,16 +297,127 @@ body {
 .tech-badge i {
     margin-right: 8px;
     font-size: 1rem;
-    color: var(--primary); /* Uses your Navy Blue theme */
+    color: var(--primary);
 }
 
-/* Specific Brand Colors (Optional Polish) */
-.tech-badge .fa-windows { color: #0078d4; }      /* Windows Blue */
-.tech-badge .fa-shield-alt { color: #e65100; }   /* SonicWall Orange-ish */
-.tech-badge .fa-server { color: #424242; }       /* Dell Grey */
-.tech-badge .fa-layer-group { color: #607d8b; }  /* VMware Grey/Blue */
+/* === TRAINING SECTION === */
+.training-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
 
-/* Certificate Link Icon */
+.training-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 5px;
+    border-top: 3px solid var(--accent);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.training-card .icon-box {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.training-card .role {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.training-list {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.training-list li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: start;
+}
+
+.training-list li i {
+    color: var(--accent);
+    margin-right: 10px;
+    margin-top: 4px;
+    font-size: 0.8rem;
+}
+
+/* === QUALIFICATIONS === */
+.qualifications-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.col-title {
+    color: var(--primary);
+    margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    font-size: 1.5rem;
+}
+
+.edu-card {
+    background: var(--white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.edu-card h4 { margin-bottom: 5px; }
+.edu-card .school { color: #666; margin-bottom: 8px; }
+
+.status-badge {
+    background: #ffebee;
+    color: #c62828;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.year {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Certifications */
+.cert-list { list-style: none; }
+.cert-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cert-list a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.2s;
+    border-bottom: 1px dotted #ccc;
+}
+
+.cert-list a:hover {
+    color: var(--primary);
+    border-bottom: 1px solid var(--accent);
+}
+
+/* Certificate Link Icon (Diploma) */
 .cert-link-icon {
     background: #e0f7fa;
     color: #006064;
@@ -654,36 +436,68 @@ body {
     background: var(--accent);
     color: var(--primary);
 }
-/* Certificate Links Styling */
-.cert-list a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.2s;
-    border-bottom: 1px dotted #ccc; /* Subtle hint that it's a link */
+
+.small-text {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
 }
 
-.cert-list a:hover {
-    color: var(--primary); /* Turns Navy Blue on hover */
-    border-bottom: 1px solid var(--accent);
-}
-/* Training Lists Styling */
-.training-list {
-    list-style: none;
-    margin-top: 10px;
-    padding: 0;
+/* === FOOTER === */
+.footer {
+    background: var(--primary);
+    color: var(--text-grey);
+    text-align: center;
+    padding: 50px 0;
 }
 
-.training-list li {
-    font-size: 0.9rem;
-    color: #555;
-    margin-bottom: 8px;
-    display: flex;
-    align-items: start;
+.footer h2 { color: var(--white); margin-bottom: 10px; }
+.social-links { margin: 20px 0; }
+.social-links a { color: var(--accent); margin: 0 15px; text-decoration: none; font-weight: bold; }
+.copyright { font-size: 0.9rem; opacity: 0.8; }
+
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 850px) {
+    .hero-content { flex-direction: column; text-align: center; gap: 30px; }
+    .hero-text { align-items: center; text-align: center; }
+    .hero-btns { justify-content: center; }
+    .hero h1 { font-size: 2.5rem; }
+    .qualifications-grid { grid-template-columns: 1fr; }
 }
 
-.training-list li i {
-    color: var(--accent); /* Cyan checkmarks */
-    margin-right: 10px;
-    margin-top: 4px;
-    font-size: 0.8rem;
+/* === PRINT MODE === */
+@media print {
+    body { background: white; color: black; }
+    .navbar, .hero-btns, .footer, .icon-box { display: none; }
+    
+    .hero {
+        background: none; color: black; padding: 0;
+        border-bottom: 2px solid black; margin-bottom: 20px;
+    }
+    
+    .hero-content {
+        display: flex; flex-direction: row; align-items: flex-start;
+        gap: 20px; text-align: left;
+    }
+    
+    .profile-img {
+        width: 120px; height: 120px;
+        border: 1px solid #000; box-shadow: none;
+    }
+    
+    .hero-text { display: block; color: black; }
+    .hero h1 { color: black; font-size: 24pt; margin-bottom: 5px; }
+    .hero h2 { color: #444; font-size: 14pt; margin-bottom: 10px; }
+    
+    .section { padding: 15px 0; border: none; page-break-inside: avoid; }
+    .section-title { font-size: 16pt; border-bottom: 1px solid #ccc; color: black; }
+    .project-card, .training-card, .edu-card {
+        box-shadow: none; border: 1px solid #ddd;
+        padding: 10px; margin-bottom: 10px; page-break-inside: avoid;
+    }
+    .gallery-grid { display: block; }
+    .gallery-item { page-break-inside: avoid; border: 1px solid #ccc; }
+    .qualifications-grid { gap: 20px; }
+    a { text-decoration: none; color: black; }
 }
