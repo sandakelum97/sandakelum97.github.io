@@ -1,6 +1,16 @@
 /* General Reset */
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
-body { line-height: 1.6; color: #333; background-color: #fff; }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
 
 /* Variables */
 :root {
@@ -8,172 +18,442 @@ body { line-height: 1.6; color: #333; background-color: #fff; }
     --accent: #64ffda;    /* Tech Cyan */
     --light-bg: #f8f9fa;
     --text-grey: #8892b0;
+    --white: #ffffff;
 }
 
-.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 /* Navbar */
-.navbar { background: var(--primary); padding: 1rem 0; position: sticky; top: 0; z-index: 1000; }
-.navbar .container { display: flex; justify-content: space-between; align-items: center; }
-.logo { color: var(--accent); font-size: 1.5rem; font-weight: bold; }
-.nav-links { list-style: none; display: flex; }
-.nav-links li { margin-left: 20px; }
-.nav-links a { color: #ccd6f6; text-decoration: none; font-size: 0.9rem; }
-.nav-links a:hover { color: var(--accent); }
+.navbar {
+    background: var(--primary);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
-/* Hero */
-/* Hero Section - LinkedIn Style */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--accent);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #ccd6f6;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--accent);
+}
+
+/* === HERO SECTION (Fixed Layout) === */
 .hero {
     background: var(--primary);
     color: #ccd6f6;
-    padding: 80px 0;
-    /* Removed text-align: center so text aligns left */
+    padding: 100px 0;
 }
 
 .hero-content {
-    display: flex;          /* This puts image and text side-by-side */
-    align-items: center;    /* Vertically centers them */
-    justify-content: center;
-    gap: 50px;              /* Space between photo and text */
+    display: flex;           /* Puts Image and Text side-by-side */
+    align-items: center;     /* Centers them vertically */
+    justify-content: center; /* Centers them horizontally */
+    gap: 50px;               /* Space between the Image and Text */
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-/* The Image Container */
+/* 1. Image Styling */
+.hero-image-wrapper {
+    flex-shrink: 0;          /* Prevents image from being squashed */
+}
+
 .profile-img {
-    width: 200px;           /* Slightly larger for this layout */
-    height: 200px;
-    border-radius: 50%;     /* Circle */
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;      /* Makes it a perfect circle */
     border: 4px solid var(--accent);
     object-fit: cover;
-    box-shadow: 0 0 25px rgba(100, 255, 218, 0.2);
-    display: block;         /* Fixes alignment issues */
+    box-shadow: 0 0 30px rgba(100, 255, 218, 0.15);
+    display: block;
 }
 
-/* The Text Container */
+/* 2. Text Styling */
 .hero-text {
-    text-align: left;       /* Aligns text to the left like LinkedIn */
-    max-width: 600px;       /* Prevents text from stretching too wide */
+    display: flex;
+    flex-direction: column;  /* Stacks Name, Title, Desc vertically */
+    text-align: left;
+    max-width: 600px;
 }
 
 .hero h1 {
-    font-size: 3.5rem;      /* Larger name */
-    color: #fff;
+    font-size: 3.5rem;
+    color: var(--white);
     margin-bottom: 5px;
     line-height: 1.1;
+    font-weight: 700;
 }
 
 .hero h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: var(--accent);
-    font-weight: 400;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero-desc {
+    font-size: 1.1rem;
+    color: var(--text-grey);
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* 3. Buttons Styling */
+.hero-btns {
+    display: flex;
+    flex-direction: row;     /* Forces buttons to sit side-by-side */
+    gap: 15px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 28px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn i { margin-right: 8px; }
+
+.primary-btn {
+    background: var(--accent);
+    color: var(--primary);
+    border: 1px solid var(--accent);
+}
+
+.primary-btn:hover {
+    background: rgba(100, 255, 218, 0.8);
+}
+
+.secondary-btn {
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}
+
+.secondary-btn:hover {
+    background: rgba(100, 255, 218, 0.1);
+}
+
+/* === SECTIONS === */
+.section {
+    padding: 80px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.bg-light {
+    background-color: var(--light-bg);
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 40px;
+    border-left: 5px solid var(--accent);
+    padding-left: 15px;
+}
+
+/* === PROJECT CARDS === */
+.project-card {
+    background: var(--white);
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.tags {
     margin-bottom: 15px;
 }
 
-.hero p {
-    font-size: 1.1rem;
-    color: #8892b0;
+.tag {
+    display: inline-block;
+    font-size: 0.8rem;
+    background: #e0f7fa;
+    color: #006064;
+    padding: 4px 10px;
+    border-radius: 4px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+.link-disabled {
+    color: #999;
+    text-decoration: none;
+    font-size: 0.9rem;
+    cursor: not-allowed;
+    display: inline-flex;
+    align-items: center;
+}
+
+.link-disabled i { margin-right: 5px; }
+
+/* === TRAINING GRID === */
+.training-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.training-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 5px;
+    border-top: 3px solid var(--accent);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.training-card .icon-box {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.training-card .role {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #555;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+/* === QUALIFICATIONS SPLIT === */
+.qualifications-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.col-title {
+    color: var(--primary);
     margin-bottom: 25px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+    font-size: 1.5rem;
 }
 
-.hero-btns {
-    margin-top: 10px;
-    /* No margin changes needed, but ensuring they align left */
+.edu-card {
+    background: var(--white);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--primary);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
-/* MOBILE RESPONSIVE (Important!) */
-/* On phones, we want it to stack back to center so it doesn't look squished */
-@media (max-width: 768px) {
+.edu-card h4 {
+    margin-bottom: 5px;
+}
+
+.edu-card .school {
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.status-badge {
+    background: #ffebee;
+    color: #c62828;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.year {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 3px 8px;
+    font-size: 0.75rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.cert-list {
+    list-style: none;
+}
+
+.cert-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.small-text {
+    font-size: 0.85rem;
+    color: #666;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* === FOOTER === */
+.footer {
+    background: var(--primary);
+    color: var(--text-grey);
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer h2 { color: var(--white); margin-bottom: 10px; }
+
+.social-links { margin: 20px 0; }
+
+.social-links a {
+    color: var(--accent);
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.copyright { font-size: 0.9rem; opacity: 0.8; }
+
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 850px) {
+    /* Stack the Hero Section */
     .hero-content {
-        flex-direction: column; /* Stack top to bottom */
-        text-align: center;     /* Center text on mobile */
-    }
-    
-    .hero-text {
+        flex-direction: column;
         text-align: center;
-        margin-top: 20px;
+        gap: 30px;
     }
-    
-    .profile-img {
-        width: 150px;
-        height: 150px;
+
+    .hero-text {
+        align-items: center;
+        text-align: center;
     }
+
+    .hero-btns {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero h1 { font-size: 2.5rem; }
     
-    .hero h1 { font-size: 2.2rem; }
+    /* Stack the Qualifications */
+    .qualifications-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-/* PRINT MODE */
+/* === PRINT MODE (For UAE Interviews) === */
 @media print {
+    body { background: white; color: black; }
+    
+    /* Hide non-printable elements */
+    .navbar, .hero-btns, .footer, .icon-box, .project-links { display: none; }
+    
+    /* Adjust Hero for Print */
+    .hero {
+        background: none;
+        color: black;
+        padding: 0;
+        border-bottom: 2px solid black;
+        margin-bottom: 20px;
+    }
+
     .hero-content {
         display: flex;
-        flex-direction: row;
-        border-bottom: 1px solid #000;
-        padding-bottom: 20px;
+        flex-direction: row; /* Keep side-by-side for print */
+        align-items: flex-start;
+        gap: 20px;
+        text-align: left;
     }
+
     .profile-img {
         width: 120px;
         height: 120px;
         border: 1px solid #000;
         box-shadow: none;
     }
+
     .hero-text {
+        display: block;
         color: black;
-        padding-left: 20px;
     }
-    .hero h1 { color: black; font-size: 24pt; }
-    .hero h2, .hero p { color: black; }
-}
 
-.btn { display: inline-block; padding: 10px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; margin: 0 5px; border: 1px solid var(--accent); }
-.primary-btn { background: var(--accent); color: var(--primary); }
-.secondary-btn { background: transparent; color: var(--accent); }
+    .hero h1 { color: black; font-size: 24pt; margin-bottom: 5px; }
+    .hero h2 { color: #444; font-size: 14pt; margin-bottom: 10px; }
+    .hero-desc { color: black; font-size: 11pt; margin-bottom: 0; }
 
-/* Sections */
-.section { padding: 60px 0; border-bottom: 1px solid #eaeaea; }
-.bg-light { background-color: var(--light-bg); }
-.section-title { font-size: 2rem; color: var(--primary); margin-bottom: 30px; border-left: 5px solid var(--accent); padding-left: 15px; }
+    /* Adjust Sections */
+    .section {
+        padding: 15px 0;
+        border: none;
+        page-break-inside: avoid;
+    }
 
-/* Project Cards */
-.project-card { background: #fff; padding: 25px; margin-bottom: 20px; border-radius: 5px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
-.project-card h3 { color: #000; margin-bottom: 10px; }
-.tags { margin-bottom: 15px; }
-.tag { font-size: 0.8rem; background: #e0f7fa; color: #006064; padding: 3px 8px; border-radius: 4px; margin-right: 5px; }
-.project-links { margin-top: 15px; }
-.link-disabled { color: #999; text-decoration: none; font-size: 0.9rem; cursor: not-allowed; }
+    .section-title {
+        font-size: 16pt;
+        border-left: none;
+        border-bottom: 1px solid #ccc;
+        padding-left: 0;
+        margin-bottom: 15px;
+        color: black;
+    }
 
-/* Training Grid */
-.training-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-.training-card { background: #fff; padding: 20px; border-radius: 5px; border-top: 3px solid var(--accent); box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
-.training-card .icon-box { font-size: 1.5rem; color: var(--primary); margin-bottom: 10px; }
-.training-card .role { font-size: 0.85rem; font-weight: bold; color: #555; text-transform: uppercase; margin-bottom: 8px; }
+    /* Adjust Cards */
+    .project-card, .training-card, .edu-card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-bottom: 10px;
+        page-break-inside: avoid;
+    }
 
-/* Qualifications Split */
-.qualifications-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-.col-title { color: var(--primary); margin-bottom: 20px; padding-bottom: 5px; border-bottom: 2px solid #ddd; }
-.edu-card { background: #fff; padding: 15px; margin-bottom: 15px; border-left: 3px solid var(--primary); }
-.status-badge { background: #ffebee; color: #c62828; padding: 2px 6px; font-size: 0.75rem; border-radius: 3px; font-weight: bold; }
-.cert-list { list-style: none; }
-.cert-list li { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #eee; }
-.small-text { font-size: 0.8rem; color: #666; margin-bottom: 10px; font-style: italic; }
-
-/* Footer */
-.footer { background: var(--primary); color: #8892b0; text-align: center; padding: 40px 0; }
-.social-links a { color: var(--accent); margin: 0 10px; text-decoration: none; }
-
-/* Responsive */
-@media (max-width: 768px) {
-    .qualifications-grid { grid-template-columns: 1fr; }
-    .hero h1 { font-size: 2rem; }
-}
-
-/* === PRINT MODE (For UAE Interviews) === */
-@media print {
-    body { background: white; color: black; }
-    .navbar, .hero-btns, .footer, .icon-box { display: none; }
-    .hero { background: none; color: black; padding: 0; border-bottom: 2px solid black; text-align: left; margin-bottom: 20px; }
-    .hero h1 { color: black; margin-bottom: 5px; }
-    .hero h2 { color: #444; font-size: 14pt; }
-    .section { padding: 15px 0; border: none; page-break-inside: avoid; }
-    .section-title { font-size: 14pt; border-left: none; border-bottom: 1px solid #ccc; padding-left: 0; margin-bottom: 10px; }
-    .project-card, .training-card, .edu-card { box-shadow: none; border: 1px solid #ddd; padding: 10px; margin-bottom: 10px; }
-    .qualifications-grid { gap: 20px; }
+    .qualifications-grid {
+        gap: 20px;
+    }
+    
     a { text-decoration: none; color: black; }
 }
