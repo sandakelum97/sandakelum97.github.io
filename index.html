@@ -368,7 +368,54 @@
                     </div>
                 </div>
             </div>
+           <div class="project-card">
+                <div class="project-info">
+                    <div class="project-header">
+                        <h3>Automated Database Backup & Disaster Recovery Scripting</h3>
+                        <span class="date-badge">2023 - Present</span>
+                    </div>
+                    <p class="client-name"><strong>Associated with:</strong> Chesmi Consolidated</p>
+                    
+                    <p><strong>Overview:</strong> Developed robust Windows Batch scripts to automate the replication of critical Microsoft Dynamics NAV SQL backups. The solution enforces the "3-2-1 Backup Rule" by distributing data to local disks, network shares, and cloud storage.</p>
+                    
+                    <ul class="project-bullets">
+                        <li><strong>Multi-Target Replication:</strong> Scripted logic to identify the latest <code>.bak</code> artifacts and copy them simultaneously to <strong>NAS</strong>, <strong>Portable HDD</strong>, and <strong>OneDrive</strong>.</li>
+                        <li><strong>Intelligent Error Handling:</strong> Implemented network connectivity checks (<code>ping</code> validations) and conditional logging to catch failures before data loss occurs.</li>
+                        <li><strong>Storage Optimization:</strong> Wrote differential backup scripts with auto-cleanup routines (`xcopy / move / del`) to manage storage capacity on the source server.</li>
+                        <li><strong>Audit Trails:</strong> Engineered detailed timestamped logging to track every file transfer, success state, and error code for compliance audits.</li>
+                    </ul>
 
+                    <div style="background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85rem; margin: 15px 0; overflow-x: auto;">
+                        <span style="color: #6a9955;">:: Configuration from nav_backup.bat</span><br>
+                        <span style="color: #569cd6;">set</span> "SOURCE_FOLDER=\\192.168.2.29\backupfolder\NAV-Full_Backup"<br>
+                        <span style="color: #569cd6;">set</span> "LOG_DIR=C:\Scripts\logs"<br>
+                        <br>
+                        <span style="color: #6a9955;">:: Intelligent Network Check</span><br>
+                        <span style="color: #dcdcaa;">ping</span> -n 1 192.168.2.29 >nul 2>&1<br>
+                        <span style="color: #c586c0;">if</span> !errorlevel! neq 0 (<br>
+                        &nbsp;&nbsp;<span style="color: #dcdcaa;">call</span> :log "WARNING: Cannot ping 192.168.2.29"<br>
+                        )
+                    </div>
+
+                    <div style="margin-top: 15px; margin-bottom: 15px;">
+                        <a href="https://github.com/sandakelum97/sandakelum97.github.io/blob/main/nav_backup.bat" target="_blank" rel="noopener noreferrer" class="btn secondary-btn" style="font-size: 0.9rem;">
+                            <i class="fas fa-code"></i> View Full Script
+                        </a>
+                    </div>
+
+                    <div class="tech-stack-container">
+                        <p><strong>Key Technologies:</strong></p>
+                        <div class="tech-badges">
+                            <span class="tech-badge"><i class="fas fa-terminal"></i> Windows Batch Scripting</span>
+                            <span class="tech-badge"><i class="fas fa-hdd"></i> Disaster Recovery (DR)</span>
+                            <span class="tech-badge"><i class="fab fa-microsoft"></i> OneDrive Automation</span>
+                            <span class="tech-badge"><i class="fas fa-network-wired"></i> NAS Replication</span>
+                            <span class="tech-badge"><i class="fas fa-robot"></i> Task Scheduler</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
             <div class="project-card">
                 <div class="project-info">
                     <div class="project-header">
