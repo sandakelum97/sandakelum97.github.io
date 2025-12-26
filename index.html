@@ -387,18 +387,21 @@
 
                     <div style="background: #1e1e1e; color: #d4d4d4; padding: 15px; border-radius: 5px; font-family: monospace; font-size: 0.85rem; margin: 15px 0; overflow-x: auto;">
                         <span style="color: #6a9955;">:: Configuration from nav_backup.bat</span><br>
-                        <span style="color: #569cd6;">set</span> "SOURCE_FOLDER=\\192.168.2.29\backupfolder\NAV-Full_Backup"<br>
+                        <span style="color: #569cd6;">set</span> "SOURCE_FOLDER=\\192.X.X.X\backupfolder\Full_Backup"<br>
                         <span style="color: #569cd6;">set</span> "LOG_DIR=C:\Scripts\logs"<br>
                         <br>
                         <span style="color: #6a9955;">:: Intelligent Network Check</span><br>
-                        <span style="color: #dcdcaa;">ping</span> -n 1 192.168.2.29 >nul 2>&1<br>
+                        <span style="color: #dcdcaa;">ping</span> -n 1 192.X.X.X >nul 2>&1<br>
                         <span style="color: #c586c0;">if</span> !errorlevel! neq 0 (<br>
-                        &nbsp;&nbsp;<span style="color: #dcdcaa;">call</span> :log "WARNING: Cannot ping 192.168.2.29"<br>
+                        &nbsp;&nbsp;<span style="color: #dcdcaa;">call</span> :log "WARNING: Cannot ping 192.X.X.X"<br>
                         )
                     </div>
 
                     <div style="margin-top: 15px; margin-bottom: 15px;">
                         <a href="https://github.com/sandakelum97/sandakelum97.github.io/blob/main/nav_backup.bat" target="_blank" rel="noopener noreferrer" class="btn secondary-btn" style="font-size: 0.9rem;">
+                            <i class="fas fa-code"></i> View Full Script
+                        </a>
+                        <a href="https://github.com/sandakelum97/sandakelum97.github.io/blob/main/backup_script.bat" target="_blank" rel="noopener noreferrer" class="btn secondary-btn" style="font-size: 0.9rem;">
                             <i class="fas fa-code"></i> View Full Script
                         </a>
                     </div>
