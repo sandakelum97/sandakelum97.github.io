@@ -650,6 +650,37 @@
             <p class="copyright">&copy; 2025 Tharaka Dissanayaka.</p>
         </div>
     </footer>
+<script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const icon = toggleBtn.querySelector('i');
+        const body = document.body;
+
+        // 1. Check if user already chose a theme previously
+        const currentTheme = localStorage.getItem('theme');
+        
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+        }
+
+        // 2. Click Event Listener
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            
+            // Toggle Icon and Save Preference
+            if (body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                localStorage.setItem('theme', 'light');
+            }
+        });
+    </script>
 
 </body>
 </html>
+
