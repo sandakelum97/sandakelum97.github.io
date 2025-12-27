@@ -639,3 +639,79 @@ body {
         margin-bottom: 5px;
     }
 }
+/* === THEME TOGGLE BUTTON === */
+.theme-btn {
+    background: transparent;
+    border: 1px solid var(--accent);
+    color: var(--accent);
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: all 0.3s ease;
+}
+
+.theme-btn:hover {
+    background: rgba(100, 255, 218, 0.1);
+}
+
+/* === DARK MODE OVERRIDES === */
+body.dark-mode {
+    background-color: #0a192f; /* Deep Navy Background */
+    color: #8892b0; /* Light Grey Text */
+}
+
+/* Sections turn Dark Navy */
+body.dark-mode .section {
+    background-color: #0a192f; 
+    border-bottom: 1px solid #233554;
+}
+
+/* Alternate sections get slightly lighter Navy */
+body.dark-mode .bg-light {
+    background-color: #112240; 
+}
+
+/* Cards (Projects, Experience, Education) turn Light Navy */
+body.dark-mode .project-card,
+body.dark-mode .training-card,
+body.dark-mode .edu-card,
+body.dark-mode .timeline-content,
+body.dark-mode .gallery-item {
+    background-color: #112240;
+    border: none;
+    box-shadow: 0 10px 30px -15px rgba(2,12,27,0.7);
+}
+
+/* Headings turn White/Cyan */
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode strong {
+    color: #e6f1ff;
+}
+
+body.dark-mode .section-title {
+    color: var(--accent); /* Titles become Cyan */
+}
+
+body.dark-mode .client-name,
+body.dark-mode .timeline-content li {
+    color: #a8b2d1;
+}
+
+/* Fix specific items */
+body.dark-mode .tech-badge {
+    background: #233554;
+    border-color: #112240;
+    color: #ccd6f6;
+}
+
+body.dark-mode .cert-list a {
+    color: #ccd6f6;
+}
+
+body.dark-mode .project-bullets li {
+    color: #8892b0;
+}
