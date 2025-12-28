@@ -10,7 +10,7 @@ setlocal enabledelayedexpansion
 
 :: --- [CONFIGURATION] ---
 set "WINRAR_EXE=C:\Program Files\WinRAR\WinRAR.exe"
-set "ENCRYPT_PASSWORD=Tech@man1"
+set "ENCRYPT_PASSWORD=XXXXXXXXX"
 
 :: Source (NAS Share)
 set "REMOTE_SOURCE_FOLDER=\\192.X.X.X\backupfolder\Full_Backup"
@@ -121,4 +121,5 @@ exit /b 1
 
 :log
 echo %date% %time% - %~1 >> "%LOG_FILE%"
+
 goto :eof
