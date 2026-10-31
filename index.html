@@ -447,7 +447,7 @@ footer p{font-family:var(--mono);font-size:0.55rem;color:var(--text-3);letter-sp
         <div>&nbsp;&nbsp;<span class="tk">"role"</span>:&nbsp;<span class="tv">"Security Engineer"</span>,</div>
         <div>&nbsp;&nbsp;<span class="tk">"employer"</span>:&nbsp;<span class="tv">"Subnet · AU MSSP"</span>,</div>
         <div>&nbsp;&nbsp;<span class="tk">"base"</span>:&nbsp;<span class="tv">"Colombo, Sri Lanka"</span>,</div>
-        <div>&nbsp;&nbsp;<span class="tk">"exp_yrs"</span>:&nbsp;<span class="tacc">7</span>,</div>
+        <div>&nbsp;&nbsp;<span class="tk">"exp_yrs"</span>:&nbsp;<span class="tacc">8</span>,</div>
         <div>&nbsp;&nbsp;<span class="tk">"focus"</span>:&nbsp;[<span class="tv">"SOC Ops"</span>,<span class="tv">"Threat Hunting"</span>,</div>
         <div>&nbsp;&nbsp;&nbsp;&nbsp;<span class="tv">"Vuln Mgmt"</span>,<span class="tv">"Firewall Eng"</span>],</div>
         <div>&nbsp;&nbsp;<span class="tk">"status"</span>:&nbsp;<span class="tacc">"ACTIVE ✓"</span></div>
@@ -476,14 +476,15 @@ footer p{font-family:var(--mono);font-size:0.55rem;color:var(--text-3);letter-sp
         <li><strong>Endpoint & Vuln Mgmt:</strong> Nessus TVM vulnerability management, ThreatLocker application control, endpoint compliance policy enforcement.</li>
         <li><strong>Firewall Engineering:</strong> FortiGate / FortiManager policy management, FortiAnalyzer log analysis, phishing simulation campaigns (PhishR).</li>
         <li><strong>Identity Security:</strong> Microsoft Entra ID, Conditional Access, Purview, risky user investigations, AiTM / OAuth token compromise response.</li>
+        <li><strong>Email &amp; Tenant Security:</strong> Proofpoint email protection, Dark Web ID credential-exposure monitoring, Inforcer-managed M365 security baselines, ConnectWise &amp; NinjaOne RMM-driven vulnerability remediation.</li>
       </ul>
-      <div class="tl-chips"><span class="chip">CrowdStrike Falcon</span><span class="chip">MS Sentinel</span><span class="chip">KQL</span><span class="chip">FortiGate</span><span class="chip">Nessus TVM</span><span class="chip">ThreatLocker</span><span class="chip">Entra ID</span><span class="chip">M365 Lighthouse</span></div>
+      <div class="tl-chips"><span class="chip">CrowdStrike Falcon</span><span class="chip">Defender XDR</span><span class="chip">MS Sentinel</span><span class="chip">KQL</span><span class="chip">FortiGate</span><span class="chip">Nessus TVM</span><span class="chip">ThreatLocker</span><span class="chip">Proofpoint</span><span class="chip">Entra ID</span><span class="chip">NinjaOne RMM</span></div>
     </div>
 
     <div class="tl-item reveal">
-      <div class="tl-date">FEB 2020 — PRESENT (CONCURRENT)</div>
+      <div class="tl-date">FEB 2020 — PRESENT (EXTERNAL ENGAGEMENT)</div>
       <div class="tl-org">CHESMI CONSOLIDATED</div>
-      <div class="tl-role">Senior System & Security Engineer / Head of IT · On-site, Colombo</div>
+      <div class="tl-role">Senior System &amp; Security Engineer · External Engagement (formerly Head of IT, on-site Colombo)</div>
       <ul class="tl-bullets">
         <li><strong>Security Operations:</strong> SentinelOne EDR for advanced threat detection; PRTG, Wireshark, AlienVault OSSIM monitoring; endpoint and network security controls.</li>
         <li><strong>Cloud & Hybrid Infrastructure:</strong> Windows Server 2016/19/22, VMware ESXi v7, Azure & GCP hybrid environments including RBAC and virtual networks.</li>
@@ -579,12 +580,12 @@ footer p{font-family:var(--mono);font-size:0.55rem;color:var(--text-3);letter-sp
     </div>
 
     <div class="proj-card reveal d1" data-cat="dev">
-      <div class="proj-header"><div class="proj-title">Gamified Security Awareness Training Platform</div><div class="proj-date">Aug – Oct 2025</div></div>
-      <div class="proj-org">Chesmi Consolidated</div>
+      <div class="proj-header"><div class="proj-title">Security Awareness Training Platform (Open)</div><div class="proj-date">Aug 2025 – Present</div></div>
+      <div class="proj-org">Open Source · Originally built for Chesmi Consolidated</div>
       <span class="proj-cat cat-dev">Dev · Security</span>
-      <p class="proj-desc">Full-stack gamified web app to train employees on phishing and password security. Features live leaderboards, scenario-based challenges, JWT auth, and PostgreSQL persistence. Deployed to Vercel.</p>
-      <div class="proj-tech"><span class="chip">Vanilla JS</span><span class="chip">Node.js / Express</span><span class="chip">PostgreSQL</span><span class="chip">JWT Auth</span><span class="chip">Vercel</span></div>
-      <div class="proj-links"><a href="https://chesmi-security-training.vercel.app/" target="_blank" rel="noopener" class="proj-link">Live App ↗</a><a href="https://github.com/sandakelum97/chesmi-security-training" target="_blank" rel="noopener" class="proj-link">Source ↗</a></div>
+      <p class="proj-desc">Gamified web platform for cyber security, AI security and general AI awareness — scenario-based challenges, live leaderboards and JWT auth. Re-platformed in 2026 as a vendor-neutral, open version anyone can deploy: Neon Postgres backend, fresh Vercel deployment, company-specific content removed.</p>
+      <div class="proj-tech"><span class="chip">Vanilla JS</span><span class="chip">Node.js / Express</span><span class="chip">Neon Postgres</span><span class="chip">JWT Auth</span><span class="chip">Vercel</span></div>
+      <div class="proj-links"><a href="https://security-training-ruby.vercel.app/" target="_blank" rel="noopener" class="proj-link">Live App ↗</a><a href="https://github.com/sandakelum97/security-training" target="_blank" rel="noopener" class="proj-link">Source ↗</a></div>
     </div>
 
     <div class="proj-card reveal d2" data-cat="dev">
@@ -611,6 +612,15 @@ footer p{font-family:var(--mono);font-size:0.55rem;color:var(--text-3);letter-sp
       <span class="proj-cat cat-dev">Dev · Automation</span>
       <p class="proj-desc">Windows Batch scripts enforcing 3-2-1 backup rule: auto-identifies latest Dynamics NAV SQL .bak artifacts, encrypts via WinRAR (AES), and distributes to NAS, portable HDD, and OneDrive. Includes connectivity checks, error handling, and timestamped audit logs.</p>
       <div class="proj-tech"><span class="chip">Windows Batch</span><span class="chip">SQL Server</span><span class="chip">Disaster Recovery</span><span class="chip">OneDrive Auto</span><span class="chip">Task Scheduler</span></div>
+    </div>
+
+    <div class="proj-card reveal d2" data-cat="dev">
+      <div class="proj-header"><div class="proj-title">Sri Lanka PDPA Awareness Platform</div><div class="proj-date">Oct 2026 – Present</div></div>
+      <div class="proj-org">Independent Initiative · Public Education</div>
+      <span class="proj-cat cat-dev">Dev · Privacy Law</span>
+      <p class="proj-desc">Bilingual (Sinhala / English) public-education website explaining Sri Lanka's Personal Data Protection Act No. 9 of 2022 in plain language for citizens, small businesses and technical audiences. Planned features: occupation-based "What does this mean for me?" pathways, "PDPA in 60 seconds" micro-videos, and a Small Business Privacy Health Check. Independent, non-government, built from official sources only.</p>
+      <div class="proj-tech"><span class="chip">PDPA No. 9 of 2022</span><span class="chip">Sinhala / English</span><span class="chip">Legal Research</span><span class="chip">Privacy Awareness</span><span class="chip">Static Web</span></div>
+      <div class="proj-links"><a href="https://github.com/sandakelum97/sri-lanka-pdpa-awareness" target="_blank" rel="noopener" class="proj-link">Source ↗</a></div>
     </div>
 
     <div class="proj-card reveal d1" data-cat="dev">
@@ -704,6 +714,13 @@ footer p{font-family:var(--mono);font-size:0.55rem;color:var(--text-3);letter-sp
         <div class="cert-card reveal d3"><a href="https://university.sentinelone.com/c/bKLddgcXQ_Oa9aOLH87O3A" target="_blank" rel="noopener" class="cert-link"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a><div class="cert-status cs-live">● ACTIVE</div><div class="cert-name">SentinelOne</div><div class="cert-body">Singularity Admin Essentials</div></div>
         <div class="cert-card reveal d1"><a href="https://drive.google.com/file/d/1uKYMC2NrfMDM2UPpooruILtKMFJ9hbm9/view?usp=sharing" target="_blank" rel="noopener" class="cert-link"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a><div class="cert-status cs-live">● ACTIVE</div><div class="cert-name">SecOps CNSP</div><div class="cert-body">Certified Network Security Practitioner</div></div>
         <div class="cert-card reveal d2"><a href="https://drive.google.com/file/d/1m-XZa5QY-RQmqBoT8gFukYTuoK-gpe1V/view?usp=sharing" target="_blank" rel="noopener" class="cert-link"><svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a><div class="cert-status cs-live">● ACTIVE</div><div class="cert-name">KodeKloud</div><div class="cert-body">DevOps Engineer Level 1</div></div>
+      </div>
+      <h3 style="font-family:var(--mono);font-size:0.65rem;letter-spacing:0.25em;text-transform:uppercase;color:var(--text-3);margin:1.8rem 0 1.2rem;">IN PROGRESS</h3>
+      <div class="cert-grid">
+        <div class="cert-card reveal d1"><div class="cert-status cs-wip">○ IN PROGRESS</div><div class="cert-name">SC-500</div><div class="cert-body">Microsoft Cloud &amp; AI Security Engineer</div></div>
+        <div class="cert-card reveal d2"><div class="cert-status cs-wip">○ IN PROGRESS</div><div class="cert-name">ISC2 CISSP</div><div class="cert-body">Certified Information Systems Security Professional</div></div>
+        <div class="cert-card reveal d3"><div class="cert-status cs-wip">○ IN PROGRESS</div><div class="cert-name">CompTIA SecAI+</div><div class="cert-body">AI Security Practitioner</div></div>
+        <div class="cert-card reveal d1"><div class="cert-status cs-wip">○ IN PROGRESS</div><div class="cert-name">TryHackMe AI1</div><div class="cert-body">AI Security Certification</div></div>
       </div>
     </div>
   </div>
@@ -960,14 +977,15 @@ document.getElementById('hamBtn').addEventListener('click',()=>document.getEleme
   }
 
   // Pinned fallback — always show these if API returns < 2 repos or fails
-  // These 6 repos always render — API data wins if available, fallback descriptions used if not
+  // These 7 repos always render — API data wins if available, fallback descriptions used if not
   const PINNED=[
     {name:'user-awareness-game',html_url:'https://github.com/sandakelum97/user-awareness-game',description:'Interactive security awareness game for end users — phishing simulations, security quizzes, and gamified learning modules.',language:'JavaScript',stargazers_count:0,pushed_at:'2025-10-01T00:00:00Z',homepage:''},
     {name:'SC200-SC300-study-plan',html_url:'https://github.com/sandakelum97/SC200-SC300-study-plan',description:'Structured study plan, notes and resources for Microsoft SC-200 and SC-300 certification exams. Used to pass both on first/second attempt.',language:'Markdown',stargazers_count:0,pushed_at:'2026-01-01T00:00:00Z',homepage:''},
-    {name:'mssp-soc-playbooks',html_url:'https://github.com/sandakelum97/mssp-soc-playbooks',description:'MSSP SOC investigation playbooks — alert triage, threat hunting, and incident response procedures for CrowdStrike, Sentinel and Defender XDR.',language:'Markdown',stargazers_count:0,pushed_at:'2026-03-01T00:00:00Z',homepage:''},
+    {name:'mssp-soc-playbooks',html_url:'https://github.com/sandakelum97/mssp-soc-playbooks',description:'Sanitised KQL hunting queries and SOC incident response playbooks for Defender XDR, Sentinel and CrowdStrike — alert triage, threat hunting and response procedures. No client data, no PII.',language:'KQL',stargazers_count:0,pushed_at:'2026-10-31T00:00:00Z',homepage:''},
     {name:'prompt-engineering-trainer',html_url:'https://github.com/sandakelum97/prompt-engineering-trainer',description:'Hands-on prompt engineering training tool. Practice and master effective AI prompt patterns for security operations and productivity workflows.',language:'JavaScript',stargazers_count:0,pushed_at:'2026-02-01T00:00:00Z',homepage:''},
-    {name:'chesmi-security-training',html_url:'https://github.com/sandakelum97/chesmi-security-training',description:'Full-stack gamified security awareness platform — phishing & password security challenges, live leaderboards, JWT auth, PostgreSQL.',language:'JavaScript',stargazers_count:0,pushed_at:'2025-10-15T00:00:00Z',homepage:'https://chesmi-security-training.vercel.app/'},
-    {name:'sandakelum97.github.io',html_url:'https://github.com/sandakelum97/sandakelum97.github.io',description:'Security engineer portfolio — Three.js 3D background, step-by-step sections, live GitHub & Medium feeds, dark/light themes.',language:'HTML',stargazers_count:0,pushed_at:'2026-06-01T00:00:00Z',homepage:'https://sandakelum97.github.io'}
+    {name:'security-training',html_url:'https://github.com/sandakelum97/security-training',description:'Open, gamified security awareness training platform — cyber security, AI security and general AI modules, live leaderboards, JWT auth, Neon Postgres. Deploy it for any organisation.',language:'JavaScript',stargazers_count:0,pushed_at:'2026-10-31T00:00:00Z',homepage:'https://security-training-ruby.vercel.app/'},
+    {name:'sri-lanka-pdpa-awareness',html_url:'https://github.com/sandakelum97/sri-lanka-pdpa-awareness',description:'Bilingual (Sinhala/English) public education site on Sri Lanka\'s Personal Data Protection Act No. 9 of 2022 — plain-language guides for citizens, small businesses and engineers.',language:'HTML',stargazers_count:0,pushed_at:'2026-10-31T00:00:00Z',homepage:''},
+    {name:'sandakelum97.github.io',html_url:'https://github.com/sandakelum97/sandakelum97.github.io',description:'Security engineer portfolio — Three.js 3D background, step-by-step sections, live GitHub & Medium feeds, dark/light themes.',language:'HTML',stargazers_count:0,pushed_at:'2026-10-31T00:00:00Z',homepage:'https://sandakelum97.github.io'}
   ];
 
   function render(repos){
